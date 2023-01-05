@@ -1,0 +1,555 @@
+*{margin: 0; padding: 0;}
+
+body{}
+
+/* Erro Validação */
+.error { color: #FF0000 !important;}
+input.error { background: #FFD1D1; border: 1px solid #FF0000 !important;}
+select.error { background: #FFD1D1; border: 1px solid #FF0000 !important;}
+textarea.error { background: #FFD1D1; border: 1px solid #FF0000 !important;}
+label.error { display: none !important;}
+div.custom_error{ background: #D6E3D0 !important;}
+.custom_error { color: red !important;}
+/* Erro Validação */
+
+#nav{float: left; width: 100%;}
+
+#content{background: url("../img/bg_mediabox.jpg") repeat-x scroll 0 0 transparent; float: left; width: 100%; margin: 15px 0 0;}
+
+#content_player{background: url("../img/bg_mediabox_player.jpg") repeat-x scroll 0 0 transparent; float: left; width: 100%; margin: 15px 0 0;}
+
+#content_texto{background: url("../img/bg_inferior.jpg") repeat scroll 0 0 transparent; float: left; width: 100%; margin: 8px 0 0; padding-bottom: 70px;}
+
+
+#footer{background: url("../img/bg_rodape.png") repeat-x scroll 0 0 transparent; height: 70px; float: left; width: 100%;}
+
+/* fontes */
+
+@font-face {
+    font-family: 'placard_mtcondensed';
+    src: url('fonte/placard_mt_condensed-webfont.eot');
+    src: url('fonte/placard_mt_condensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonte/placard_mt_condensed-webfont.woff') format('woff'),
+         url('fonte/placard_mt_condensed-webfont.ttf') format('truetype'),
+         url('fonte/placard_mt_condensed-webfont.svg#placard_mtcondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* fim fontes */
+
+/* menu */
+
+.menu-topo{background: none repeat scroll 0 0 #222222; float: left; height: 50px; width: 100%;}
+
+.login-topo{float: right; width: 100%;}
+.login-topo ul{float: right; width: 925px;}
+.login-topo li{color: #9c9c9c; float: left; list-style: none outside none; margin: 15px 0 0 20px; font: 18px calibri;}
+.login-topo input{height: 18px; width: 170px; color: #000000;}
+.login-topo a{color: #9c9c9c;text-decoration: none;}
+.login-topo a:hover{color: #ffffff;}
+
+
+.topo{float: left; width: 100%;}
+
+.logo{float: left; margin: 15px 0 0; width: 275px;}
+
+.menu{float: right; margin: 70px 0 0; width: 570px;}
+.menu ul{float: right;}
+.menu li{float: left; list-style: none outside none; margin-right: 10px; padding: 13px 28px 5px; font: 30px placard_mtcondensed;}
+.menu a{color: #000000; text-decoration: none;}
+.menu li:hover{background: none repeat scroll 0 0 #902627;}
+.menu li:hover a{color: #ffffff; text-decoration: none; }
+
+.link{background: none repeat scroll 0 0 #902627!important;}
+.link a{color: #ffffff;}
+
+/* fim menu */
+
+/* mediabox */
+
+.mediabox{float:left; width: 100%; min-height: 400px;}
+
+.slider{float: left; width: 770px; position: relative;}
+.slider img{margin: 50px 0 0; border: 2px solid #FFFFFF; height: 379px;width: 765px;}
+.slider iframe{float: left; margin: 27px 0 0;}
+
+.texto_img{background: url("../img/bg_slider.png") repeat-x scroll 0 0 transparent; bottom: 2px; float: left; height: 78px; left: 2px; position: absolute; width: 765px; color: #FFFFFF;}
+.texto_img h1{float: left; font: bold 15px trebuchet ms; padding: 0 0 0 10px; margin: 5px 0 0;}
+.texto_img p{float: left; font: bold 13px trebuchet ms; padding: 0 0 0 10px; margin: 5px 0 0;}
+
+/* fim mediabox */
+
+/* formulario */
+
+.cadastro{background: none repeat scroll 0 0 #E6E6E6; border: 2px solid #FFFFFF;  border-radius: 4px 4px 4px 4px; float: right; height: 450px; margin: 45px 0 0; position: relative; width: 375px;}
+.cadastro h2{background: url("../img/cadastro.png") no-repeat scroll 10px 0 transparent; float: left; font: 42px placard_mtcondensed; height: 60px; padding: 10px 0 0; position: absolute; text-align: center; top: -28px; width: 100%;}
+.cadastro form{float: left; width: 100%;}
+.cadastro ol{float: left; margin: 60px 0 0; width: 100%;}
+.cadastro li{float: left; list-style: none outside none; width: 100%;}
+.cadastro input{border: 0 none; border-radius: 4px 4px 4px 4px; float: left; margin: 20px 0 0 20px; padding: 10px; color: #989898;}
+.cadastro span{float: left; padding: 20px;}
+.cadastro label a{margin:22px 10px; float:left;}
+.checkbox{padding:0 !important;}
+
+.bt-enviar{background: url("../img/bt-enviar.png") no-repeat scroll 0 0 transparent; border: 0 none; height: 48px; margin: 0 100px; width: 168px;}
+.bt-enviar:hover{background: url("../img/bt-enviar2.png") no-repeat scroll 0 0 transparent; border: 0 none; height: 48px; margin: 0 100px; width: 168px;}
+
+/* fim formulario */
+
+/* aulas recentes */
+
+.curso{float: left; width: 100%;}
+.curso h3{color: #5A0808; font: 50px placard_mtcondensed;}
+
+.aula{ margin-top: 40px;}
+.aula img{border: 2px solid #FFFFFF; border-radius: 4px 4px 4px 4px; box-shadow: 0 0 0 1px #CECFCF; -moz-box-shadow: 0 0 0 1px #CECFCF; -webkit-box-shadow: 0 0 0 1px #CECFCF;}
+.aula h4{float: left; font: 40px placard_mtcondensed; margin: 20px 0 0; width: 100%;}
+.aula p{color: #363636; float: left; font: 16px calibri; margin: 10px 0 0; width: 100%;}
+
+.banner{background: url("../img/bg_azul.jpg") repeat-x scroll 0 0 transparent;  float: left; height: 155px; margin: 60px 0 0; width: 100%;}
+.banner img{float: left; margin: 35px 0 0 95px;}
+
+.rodape{}
+.rodape ul{float: right; margin: 25px 0 0;}
+.rodape li{color: #FFFFFF; float: left; list-style: none outside none; margin-left: 10px;}
+.rodape a{color: #FFFFFF; text-decoration: none; font-size: 14px;}
+.rodape small{color: #FFFFFF; float: left; font: 16px calibri; margin: 25px 0 0;}
+.rodape .face_footer{float: left; margin: -10px 0 0 35px;}
+
+/* fim aulas recentes */
+
+/* Inicio Player */
+
+.player{float: left; width: 770px; position: relative;}
+.player img{margin: 50px 0 0; border: 2px solid #FFFFFF; height: 379px;width: 765px;}
+.player iframe{float: left; margin: 2px 0 0;}
+.player a{color: #FFFFFF; text-decoration: none;}
+
+.player small.titulo{background: none repeat scroll 0 0 #2A2A2A; float: left; font: bold 30px placard_mtcondensed; margin: 15px 0 0; padding: 10px 15px 5px; width: 305px; text-transform: uppercase;}
+.player small.voltar{background: url("../img/avancar.png") no-repeat scroll 308px 20px #2A2A2A; float: right; font: bold 30px placard_mtcondensed; margin: 15px 0 0; padding: 10px 15px 5px; width: 305px;}
+
+.conteudo_aula{background: none repeat scroll 0 0 #f5f5f5; border-radius: 4px 4px 4px 4px; float: right; height: 466px; margin: 65px 0 0; position: relative; width: 375px;}
+.conteudo_aula h2{background: none repeat scroll 0 0 #902627; float: left; width: 100%;font: bold 30px placard_mtcondensed; color: #FFFFFF; padding: 10px 0 5px 20px; width: 355px;}
+.conteudo_aula ul{float: left; height: 303px; overflow: auto; width: 375px; height: 385px;}
+.conteudo_aula li{background: url("../img/seta.png") no-repeat scroll left center transparent; float: left; font: 18px calibri; list-style: none outside none; margin: 10px 0 0 20px; padding-left: 20px; width: 310px;}
+.conteudo_aula .vermelho a{color: #902627;}
+.conteudo_aula a{color: #363636; text-decoration: none;}
+
+.menu_video{float: left; margin: -5px 0 0; width: 770px;}
+.menu_video ul{float: left; text-align: center;width: 100%;}
+.menu_video li{color: #ffffff; float: left; list-style: none outside none; margin-right: 10px; background: none repeat scroll 0 0 #2A2A2A; font: bold 30px placard_mtcondensed; margin: 15px 0 0; padding: 10px 15px 5px; width: 200px;}
+.menu_video a{color: #000000; text-decoration: none;}
+.menu_video li:hover{background: none repeat scroll 0 0 #902627;}
+.menu_video li:hover a{color: #ffffff; text-decoration: none; }
+.menu_video .box2{margin-left: 40px;}
+.menu_video .box3{float: right;}
+
+.box_titulo{float: left; width: 865px;}
+
+.titulo_texto h3{color: #902627; float: left; font: bold 50px placard_mtcondensed; margin: 60px 0 0; width: 100%; text-transform: uppercase;}
+.titulo_texto p{color: #363636; float: left; font: 18px calibri; margin: 20px 0 0; width: 100%;}
+
+.categoria{background: none repeat scroll 0 0 #5F1518; color: #FFFFFF; float: left; border-radius: 4px 4px 0 0; font-family: placard_mtcondensed; overflow: hidden; width: 100%;}
+.categoria h4{float: left; font-size: 30px; width: 50%; padding: 15px 0 0 20px;}
+.categoria h5{float: right; font-size: 30px; text-align: left; width: 35.5%; padding: 15px 20px 0 0;}
+
+
+.quadro_geral{float:left; width:100%; margin: 60px 0 0;}
+.quadros{border: 1px solid #A5A5A5; border-radius: 0 0 4px 4px;float: left; height: 195px; width: 863px; margin: 1px 0 0;}
+
+.quadro_aula ul{float: left; width: 60%; height: 195px; overflow: auto;}
+.quadro_aula li{background: url("../img/seta.png") no-repeat scroll left 10px transparent; float: left; font: 18px calibri; list-style: none outside none; margin: 10px 0 0 20px; padding: 5px 0 0 20px; width: 350px;}
+.quadro_aula a{color: #363636; text-decoration: none;}
+
+.quadro_professor ul{float: left; width: 40%; height: 195px; overflow: auto;}
+.quadro_professor li{background: url("../img/seta.png") no-repeat scroll left 10px transparent; float: left; font: 18px calibri; list-style: none outside none; margin: 10px 0 0 20px; padding: 5px 0 0 20px; width: 285px;}
+.quadro_professor a{color: #363636; text-decoration: none;}
+
+.lateral{float: right; width: 270px;}
+.box_lateral{float: left; width: 100%; margin: 60px 0 0;}
+.box_lateral p{color: #363636; float: left; font: 18px calibri; margin: 20px 0 0; width: 100%; margin: 13px 0 12px;}
+
+/* Fim Player */
+
+    /* Prevent the slideshow from flashing on load */
+    #slides {
+
+    }
+
+    /* Center the slideshow */
+    .container {
+      margin: 0 auto
+    }
+
+    /* Show active item in the pagination */
+    .slidesjs-pagination .active {
+      color:red;
+    }
+
+    /* Media quires for a responsive layout */
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px
+      }
+    }
+
+/* Slides */
+
+.slidesjs-previous{background: url("../img/bt-prev.png") no-repeat scroll 0 0 transparent; display: none; height: 48px; left: 10px; position: absolute; text-indent: -9999em; top: 220px; width: 50px; z-index: 9999;}
+
+.slidesjs-next{background: url("../img/bt-next.png") no-repeat scroll 0 0 transparent; display: none; height: 48px; right: 10px; position: absolute; text-indent: -9999em; top: 220px; width: 50px; z-index: 9999;}
+
+.slidesjs-pagination{display: none;}
+
+.slidesjs-stop{display: none !important;}
+
+.slidesjs-play{display: none!important;}
+
+/* Fim Slides */
+
+/* TABLES
+------------------------------------------------------------------------- */
+.gtable {
+  width: 100%;
+}
+.gtable th {
+  text-align: left;
+  padding: 5px 10px;
+}
+.gtable thead tr {
+  color: #333;
+  border: 1px solid #ccc;
+}
+.gtable thead th {
+  background: #efefef;
+}
+.gtable tbody tr td {
+  border-bottom: 1px solid #eee;
+}
+
+.gtable tbody tr td label {
+  margin-left: 10px
+}
+
+.gtable tbody tr td input[type="radio"] {
+  margin-top: -2px;
+}
+
+.gtable tbody tr:nth-child(odd) td, .detailtable tbody tr.odd td {
+  background-color: #fff;
+}
+.gtable tbody tr:nth-child(even) td, .detailtable tbody tr.even td {
+  background-color: #f7f7f7;
+}
+.gtable tbody tr:hover td {
+  background-color: #FFFAE3;
+}
+.gtable td {
+  padding: 5px 10px;
+}
+.gtable input {
+  vertical-align: middle;
+}
+.gtable img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.gtable tr.detail {
+  font-size: 11px;
+}
+.gtable tr.detail td {
+  padding: 0;
+}
+.gtable tr.detail td td, .gtable tr.detail td th {
+  padding: 2px 10px;
+  color: #777;
+}
+.gtable .detail table {
+  width: 100%;
+  border: 5px solid #fff7d1;
+}
+.gtable .detail table tr td, .gtable .detail table tr th {
+  background: #ffffed;
+  border-bottom: 1px solid #fff7d1;
+}
+table.sortable img.move {
+  cursor: move;
+}
+
+.tablefooter {
+  background: #f7f7f7;
+  border-top: 1px solid #fff;
+}
+.tablefooter .actions {
+  float: left;
+  padding: 5px 10px;
+}
+.tablefooter .pagination {
+  float: right;
+  padding: 5px 10px;
+}
+
+/* message boxes
+------------------------------------------------------------------------- */
+div.msg {
+  padding: 10px 10px 10px 37px;
+  margin: 48px 10px 10px 10px;
+  cursor: pointer;
+}
+div.success {
+  border: 1px solid #6cd858;
+  background: #e3ffde url(../img/admin/icons/tick.png) 10px 13px no-repeat;
+}
+div.error {
+  border: 1px solid #ffa2aa;
+  background: #fae8e8 url(../img/admin/icons/exclamation-red.png) 10px 13px no-repeat;
+}
+div.warning {
+  border: 1px solid #d6d61f;
+  background: #ffffd3 url(../img/admin/icons/exclamation.png) 10px 13px no-repeat;
+}
+div.information {
+  border: 1px solid #b4dbe8;
+  background: #e3f2f7 url(../img/admin/icons/information-balloon.png) 10px 13px no-repeat;
+}
+
+/* BUTTONS
+------------------------------------------------------------------------- */
+.button {
+  font: 11px Tahoma, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: baseline;
+  margin: 0 3px 0 1px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 6px 8px;
+  text-shadow: 1px 1px 1px #555;
+  width: auto;
+  overflow: visible;
+  line-height: 110%;
+}
+.button:hover {
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=90);
+}
+a.button:hover {
+  color: #fff;
+}
+.button:active {
+  position: relative;
+  top: 1px;
+}
+.button.big {
+  font: 15px Arial, sans-serif;
+  font-weight: bold;
+  padding: 8px 10px;
+}
+.button.small {
+  font-weight: normal;
+  padding: 4px 5px;
+}
+.button.red {
+  border: 1px solid #9c0606;
+  background: #e85353;
+}
+.button.blue {
+  border: 1px solid #0d717e;
+  background: #28a0b2;
+}
+.button.green {
+  border: 1px solid #3b6e22;
+  background: #75ae5c;
+}
+.button.orange {
+  border: 1px solid #c16729;
+  background: #ff9435;
+}
+.button.purple {
+  border: 1px solid #981271;
+  background: #cb60b3;
+}
+.button.yellow {
+  border: 1px solid #af9827;
+  background: #d1c164;
+}
+.button.black {
+  border: 1px solid #000;
+  background: #444;
+}
+.button.gray {
+  border: 1px solid #444;
+  background: #888;
+}
+.button.white {
+  color: #444;
+  text-shadow: 1px 1px 0 #fff;
+  border: 1px solid #999;
+  background: #f7f7f7;
+}
+.button.white:hover {
+  color: #444;
+}
+section.buttons {
+  text-align: center;
+}
+section.buttons .button {
+  margin-bottom: 15px;
+}
+
+/* PLAYER
+------------------------------------------------------------------------- */
+.barra_player{background: url("../img/bg_player.jpg") repeat scroll 0 center rgba(0, 0, 0, 0) !important; height: 34px; width: 770px; float: left;}
+.barra_player .progresso{width: 465px; height: 10px;}
+.barra_player ul{list-style: none outside none; margin: 0; padding: 0 10px 0 0; position: relative;}
+.barra_player li{color: #BBBBBB; float: left; font-size: 12px; padding: 9px 0 0 10px; position:relative;}
+.barra_player li a{color: #BBBBBB; text-decoration:none; }
+.barra_player img {margin: 0; border: 0; height: inherit; width: inherit;}
+
+.pause, .loop, .inter, .som{float: left; padding: 2px 0 0 0;}
+
+.bt-play{background: url("../img/bt-play.jpg") no-repeat; width:19px; height: 15px; border:0; text-indent: -9999px;}
+
+.bt-pause{background: url("../img/bt-pause.jpg") no-repeat center 2px; width:19px; height: 15px; border:0; text-indent: -9999px;}
+
+ul li ul {position: absolute; left: -1000em;}
+ul li:hover ul ul, ul li.over ul ul {left: -1000em; }
+ul li:hover ul, ul li li:hover ul, ul li.over ul, ul li li.over ul {left: 3px; top:-107px; margin-top: 0 !important;}
+
+#ul_volume{position:absolute; z-index:99999999999999999999999;}
+
+.container-video{position:relative; width: 770px; float:left; z-index:9999999999999999999999999999;}
+
+.style{width:100%; height:96%;}
+
+.vol{width:10px; background: #000; border:0; padding:14px 3px;}
+#slider-vertical{background:#401515; width:5px; margin-left: 3px; border:0;}
+#slider-vertical div{background:#800000; width:5px;}
+#slider-vertical a{background:#d00000; width:5px; margin-left:4px; border:0;}
+
+#slider-progressbar{background: #401515; border:0; margin:4px 0 0 10px; height:10px;}
+#slider-progressbar div{background:#800000; width:;}
+#slider-progressbar a{background:#d00000; border:0; height:10px; margin-top:4px; width:3px; margin-left: 0;}
+
+#slider-loop{background: transparent; border:0; margin:4px 0 0 10px; height:10px;}
+#slider-loop div{background:transparent;}
+#slider-loop a{background:#d00000; border:0; height:10px; margin-top:4px;width:11px; width:3px; margin-left: 0;}
+
+.inicio span{color: red; position: absolute; top: -15px;}
+.fim span{color: red; position: absolute; top: -15px;}
+
+/* pagination
+------------------------------------------------------------------------- */
+.pagination {
+  font: 11px Tahoma, sans-serif;
+  margin: 7px 0;
+  text-align: right;
+}
+.pagination a {
+  padding: 4px 7px;
+  color: #333;
+  background: #fff;
+  margin: 0;
+  border: 1px solid #e4e4e4;
+}
+.pagination a.current {
+  font-weight: bold;
+  color: #fff;
+  background: #555;
+  border: 1px solid #555;
+}
+
+.pagination span.current a {
+  font-weight: bold;
+  color: #fff;
+  background: #555;
+  border: 1px solid #555;
+}
+.pagination a:hover {
+  color: #fff;
+  background: #777;
+  border: 1px solid #777;
+}
+
+/* Scroller
+---------------------------------------------------------------------------- */
+/*
+ * Scroller Plugin [Formstone Library]
+ * @author Ben Plum
+ * @version 0.6.4
+ *
+ * Copyright Â© 2013 Ben Plum <mr@benplum.com>
+ * Released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
+ */
+
+  .partitura_tab { width: 865px; height: 500px; border: 1px solid #CCCCCC; float:left;}
+  .partitura_tab p { margin-top: 0;}
+  .partitura_tab img { width: 100%;}
+ 
+  .scroller { overflow: hidden; overflow-x: hidden; overflow-y: hidden; position: relative; }
+  .scroller-content { height: 100%; overflow: auto; overflow-x: hidden; overflow-y: auto; position: relative; z-index: 1; }
+  .scroller-bar { background: #FBFBFB; border-left: 1px solid #EEEEEE; display: none; height: 100%; position: absolute; right: 0; top: 0; width: 20px; z-index: 2; }
+  .scroller-track { background: #FBFBFB; height: 100%; overflow: hidden; position: relative; width: 100%; }
+  .scroller-handle { background: #EEEEEE; border: 1px solid #D5D5D5; border-radius: 5px; cursor: pointer; height: 20px; overflow: hidden; position: absolute; right: 5px; top: 0; width: 10px; z-index: 2; 
+    -webkit-transition: right 0.1s linear, width 0.1s linear;
+       -moz-transition: right 0.1s linear, width 0.1s linear;
+        -ms-transition: right 0.1s linear, width 0.1s linear;
+         -o-transition: right 0.1s linear, width 0.1s linear;
+          transition: right 0.1s linear, width 0.1s linear;
+  }
+  
+  /* Webkit Fix */
+  .scroller-content::-webkit-scrollbar,
+  .scroller-content::-webkit-scrollbar-button,
+  .scroller-content::-webkit-scrollbar-track,
+  .scroller-content::-webkit-scrollbar-track-piece,
+  .scroller-content::-webkit-scrollbar-thumb,
+  .scroller-content::-webkit-scrollbar-corner,
+  .scroller-content::-webkit-resizer { background: transparent; opacity: 0; }
+  
+  /* Active Scrollbar */
+  .scroller-active .scroller-content { padding: 20px; }
+  .scroller-active .scroller-bar { display: block; }
+  
+  /* Setup Scrollbar - Should match 'active' styles for proper sizing */
+  .scroller-active .scroller-content { padding: 20px; }
+  .scroller-active .scroller-bar { display: block; }
+  
+  /* Horizontal */
+  .scroller-horizontal .scroller-content { overflow: auto; overflow-x: auto; overflow-y: hidden; padding: 0 0 10px 0; }
+  .scroller-horizontal .scroller-bar { border-left: none; border-top: 1px solid #EEEEEE; bottom: 0; height: 20px; top: auto; width: 100%; }
+  .scroller-horizontal .scroller-handle { bottom: 5px; height: 10px; right: auto; top: auto; width: 20px; }

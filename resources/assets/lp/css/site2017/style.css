@@ -1,0 +1,818 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400');
+
+/* Header  */
+.header{ 
+ background: #767676; /* Old browsers */
+ background: -moz-linear-gradient(top,  #767676 0%, #4a4a4a 100%); /* FF3.6+ */
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#767676), color-stop(100%,#4a4a4a)); /* Chrome,Safari4+ */
+ background: -webkit-linear-gradient(top,  #767676 0%,#4a4a4a 100%); /* Chrome10+,Safari5.1+ */
+ background: -o-linear-gradient(top,  #767676 0%,#4a4a4a 100%); /* Opera 11.10+ */
+ background: -ms-linear-gradient(top,  #767676 0%,#4a4a4a 100%); /* IE10+ */
+ background: linear-gradient(to bottom,  #767676 0%,#4a4a4a 100%); /* W3C */
+ background: linear-gradient(180deg, #cf3947 0%, #4c000b 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#767676', endColorstr='#4a4a4a',GradientType=0 ); /* IE6-9 */
+
+ -webkit-box-shadow: 0 4px 16px #6c6c6c;
+ box-shadow: 0 4px 16px #6c6c6c;
+ width: 100%;
+ height: 50px;
+ float: left;
+ font: 16px proxima_nova_rgregular;
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.f-nav-header{ position: fixed; z-index: 9999; }
+
+.header a { color: #fff; }
+
+a:hover, button:hover{ text-decoration: none; opacity: 0.8; }
+
+.logo{ 
+ width: 130px; padding: 6px 0; position: absolute; left: 0; top: 0; 
+ background: #6b6b6b; /* Old browsers */
+ background: -moz-linear-gradient(top,  #6b6b6b 0%, #323232 100%); /* FF3.6+ */
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6b6b6b), color-stop(100%,#323232)); /* Chrome,Safari4+ */
+ background: -webkit-linear-gradient(top,  #6b6b6b 0%,#323232 100%); /* Chrome10+,Safari5.1+ */
+ background: -o-linear-gradient(top,  #6b6b6b 0%,#323232 100%); /* Opera 11.10+ */
+ background: -ms-linear-gradient(top,  #6b6b6b 0%,#323232 100%); /* IE10+ */
+ background: linear-gradient(to bottom,  #6b6b6b 0%,#323232 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b6b6b', endColorstr='#323232',GradientType=0 ); /* IE6-9 */
+
+}
+.logo img{ width: 70%; margin: 0 auto; display: block; }
+
+.box_menu{ float: right; }
+.box_menu{ padding: 0; list-style: none; }
+.box_menu li{ float: left; font: 16px proxima_novasemibold; text-transform: uppercase; margin: 15px 14px 0; }
+.box_menu li a{ color: #fff; }
+
+.box_info{ float: right; margin: 15px 10px 0; }
+.box_search{ float: right; margin: 15px 10px 0; }
+.box_menu_usuario{ float: right; margin: 14px 10px 0; position: relative; }
+
+.box_menu_usuario ol{ position: absolute; z-index: 9999; background-color: #fff; width: 174px; right: 0; top: 35px; display: none;
+   -webkit-box-shadow: inset 1px 0 0 rgba(255,255,255,.125), inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+   -moz-box-shadow: inset 1px 0 0 rgba(255,255,255,.125), inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+   box-shadow: inset 1px 0 0 rgba(255,255,255,.125), inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05); }
+
+.box_menu_usuario ol li { padding: 4px 10px !important; font-size: 14px; list-style: none; font-family: proxima_nova_rgregular; } 
+.box_menu_usuario ol li a { padding: 0; display: inline; clear: none; color: #333; width: 95%; }
+
+.box_menu_usuario ol:after { content: ""; width: 12px; line-height: 40px; height: 12px; background: #fff; position: absolute; top: -6px; right: 2px; color: #FFF; text-align: center; -ms-transform: rotate(44deg); -webkit-transform: rotate(44deg); transform: rotate(44deg); z-index: 2; }
+
+.link-login{ margin-left: 10px; }
+
+.btn_cadastro{ 
+    background: rgba(153,204,0,1);
+   background: -moz-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(153,204,0,1)), color-stop(100%, rgba(123,164,0,1)));
+   background: -webkit-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   background: -o-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   background: -ms-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   background: linear-gradient(to bottom, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cc00', endColorstr='#7ba400', GradientType=0 );
+   text-align: center;
+   font-size: 15px !important;
+   padding: 7px 13px 3px;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   border: 0 none;
+   height: 32px;
+   border-radius: 4px;
+   box-shadow: 0px 4px 0 #5d7d1e;
+   float: left;
+   line-height: 22px; 
+   margin-top: -8px;
+   margin-left: 20px;
+}
+
+/* Header*/
+
+/* footer */
+.footer{width:100%; float:left; background-color: #ad1d28; padding: 30px 0;}
+
+.footer h6{font: 18px/24px proxima_novasemibold; color:#fff; margin:0; text-transform: uppercase;}
+.footer ul, .footer ol{list-style: none; padding:0; margin:30px 0 0;}
+.footer ul li{font-size: 14px; line-height: 24px; }
+.footer ul li a{color:#fff; text-decoration: underline;}
+
+.footer ol li{width:33%; float:left; text-align: center;}
+.footer ol li img{margin-bottom:10px;}
+.footer ol li a{color:#fff;}
+.footer ol li a:hover{text-decoration:none;}
+.logo-footer{margin-top: 40px}
+
+.rodape{width: 100%; float: left; background-color: #fff; padding: 15px 0;}
+.rodape p{margin:0; color:#4f5667; font-size:14px;}
+
+.link-guitar-rodape{font-weight: bold; color:#4f5667;}
+.link-guitar-rodape:hover{text-decoration:none; color:#4f5667;}
+
+.link-design-rodape{color:#ad1d28; font-family: proxima_novasemibold;}
+.link-design-rodape:hover{color:#ad1d28;}
+
+.social-rodape{text-align: right;}
+/* footer */
+
+/* Mediabox */
+
+.mediabox_vendas { height: 265px; width: 100%; float: left; margin-top: 50px; overflow: hidden; }
+.mediabox_vendas .slides { background-repeat: no-repeat; background-position: center; height: 265px; width: 100%; float: left; }
+
+.mediabox_vendas .slides .descricao { width: 50%; float: right; }
+.mediabox_vendas .slides .descricao strong{ font: 48px/45px proxima_nova_rgbold; color: #fff; margin-top: 40px; display: block; text-shadow: 2px 2px 0px #000; }
+.mediabox_vendas .slides .descricao p{ font: 20px/24px proxima_novasemibold; color: #fff; margin-top: 15px; display: block; text-shadow: 2px 2px 0px #000; }
+.mediabox_vendas .slides .descricao a{ color: #7ce248; font: 19px/20px proxima_nova_rgregular; margin-top: 20px; display: block; }
+.mediabox_vendas .slides .descricao a i{ font-size: 15px; }
+/* Mediabox */
+
+/* Filtro */
+.nav_filtro{ width: 100%; height: 50px; float: left; background: #f7f7f7; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.nav_filtro ul{ list-style: none; padding: 0; margin: 0; }
+.nav_filtro ul li{ float: left; margin-right: 30px; font: 19px proxima_novasemibold; color: #757575; margin-top: 3px; }
+.nav_filtro ul li a{ color: #757575; }
+
+.nav_filtro form{ margin: 0; }
+.nav_filtro ul li select{ width: auto; font: 19px proxima_novasemibold; color: #757575; border: 0 none; background: transparent; background: url(../../img/site2017/combobox.png) no-repeat; background-size: 13px; background-position: center right; padding: 0 18px 0 0px; }
+
+.nav_filtro ul li select:focus{ outline: none; }
+
+.nav_filtro ul li select option { font: 14px/16px proxima_novasemibold !important; margin-top: 5px; }
+
+.btn_busca_avancada{ float: right; margin: 16px 0 16px 0; font: 15px proxima_nova_rgregular; color: #757575; text-decoration: underline; }
+
+.nav_filtro ul li select{
+  -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+  -moz-appearance: none; /* Remove estilo padrão do FireFox */
+  appearance: none; /* Remove estilo padrão do FireFox*/
+
+}
+
+
+.select2-arrow{ background: url(../../img/site2017/combobox.png) no-repeat !important; background-size: 13px !important; background-position: center right !important; padding: 0 18px 0 0px; }
+
+.select2-container .select2-choice{  color: #757575 !important; background: transparent !important; box-shadow: none !important; border: 0 none !important; width: auto !important; text-transform: none !important; font-size: 18px !important; padding: 10px 0 !important; }
+
+.select2-drop{ width: auto !important; min-width: 200px; border: 0 none !important; }
+
+div.select2-search, .exibicao-pag .select2-container .select2-focusser{ display: none !important; }
+/* Filtro */
+
+/* Conteudo */
+.conteudo-vendas{ width: 100%; float: left; padding: 30px 0; margin-top: 20px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.titulo-box { position: relative; }
+.titulo-box strong{ color: #6b6b6b; font-family: proxima_nova_rgbold; font-size: 37px; text-transform: uppercase; display: block; }
+.titulo-box small{ color: #6b6b6b; font-family: proxima_nova_rgregular; font-size: 14px; font-style: italic; margin-top: 5px; display: block; }
+
+.titulo-box .link-todos-cursos{ float: right; margin: 0; font: 18px proxima_nova_rgregular; color: #757575; text-decoration: none; position: absolute; top: 3px; right: 0; }
+
+
+.curso-destaque{ margin-top: 15px; position: relative; }
+.curso-destaque .thumb{ height: 400px; width: 100%; overflow: hidden; border-radius: 5px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.35); }
+.curso-destaque .thumb img{ height: 100%; min-width: 100; max-width: inherit; }
+.curso-destaque strong{ color: #6b6b6b; font-family: proxima_nova_rgbold; font-size: 27px; margin-top: 20px; display: block; }
+.curso-destaque small{ color: #6b6b6b; font-family: proxima_novasemibold; font-size: 14px; margin-top: 5px; display: block;}
+.curso-destaque p{ color: #6b6b6b; font-family: proxima_novasemibold; font-size: 14px; margin-top: 15px; display: block; }
+
+.curso-destaque .avaliacao{ color: #6b6b6b; }
+.curso-destaque .avaliacao i{ font-size: 15px;  }
+.curso-destaque .avaliacao i.sem-voto{ color: #d8d8d8; }
+.curso-destaque .avaliacao span{ font: 13px proxima_novasemibold; }
+
+.curso-destaque .preco-curso{ color: #000; font: 25px proxima_novasemibold; margin-top: 10px; display: block; }
+.curso-destaque .preco-curso span{ font: 17px proxima_nova_rgregular; }
+
+.preco_curso_verde span{ color: #a4d030 !important; }
+
+.curso-destaque .dados-curso{ font-size: 15px; line-height: 16px; margin: 6px 0 2px; padding: 0 0; color: #6b6b6b; font-family: proxima_novasemibold; }
+.curso-destaque .dados-curso span:last-child{ margin-left: 10px; }
+
+.curso-destaque:hover .tooltip_curso{ left: 254px !important; right: 0 !important; display: block !important; }
+.curso-destaque .tooltip_curso:after{  left: 10px !important; left: initial; }
+
+.curso-destaque .tooltip_curso strong{ color: #6b6b6b; font-family: proxima_nova_rgbold; font-size: 17px; margin-top: 14px; display: block; padding: 0 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.curso-destaque .tooltip_curso small{ color: #6b6b6b; font-family: proxima_novasemibold; font-size: 12px; margin-top: -2px; display: block; padding: 0 10px; }
+.curso-destaque .tooltip_curso p{ color: #6b6b6b; font-family: proxima_novasemibold; font-size: 14px; margin-top: 15px; display: block; }
+
+.curso-destaque .tooltip_curso a{ border-radius: 5px; overflow: hidden; display: block; }
+
+.regular{ margin: 20px 0 0 -10px; }
+
+/*.lista-cursos.select a{ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); }*/
+.lista-cursos:hover a{ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); }
+.lista-cursos:hover .tooltip_curso{ display: block; }
+
+.lista-cursos{ margin-top: 15px; margin: 0 10px 20px; width: 200px; position: relative; }
+.lista-cursos a{ box-shadow: 0 0 5px rgba(0, 0, 0, 0.35); border-radius: 5px; overflow: hidden; display: block; }
+.lista-cursos .thumb{ height: 180px; width: 100%;   }
+.lista-cursos .thumb img { height: 100%; min-width: 100%; width: auto; max-width: none; }
+.lista-cursos strong{ color: #6b6b6b; font-family: proxima_nova_rgbold; font-size: 17px; margin-top: 14px; display: block; padding: 0 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lista-cursos small{ color: #6b6b6b; font-family: proxima_novasemibold; font-size: 12px; margin-top: -2px; display: block; padding: 0 10px; }
+.lista-cursos p{ color: #6b6b6b; font-family: proxima_novasemibold; font-size: 14px; margin-top: 15px; display: block; }
+
+.lista-cursos .avaliacao{ color: #6b6b6b; margin-top: 10px; padding: 0 10px; }
+.lista-cursos .avaliacao i{ font-size: 15px;  }
+.lista-cursos .avaliacao i.sem-voto{ color: #d8d8d8; }
+.lista-cursos .avaliacao span{ font: 13px proxima_novasemibold; }
+
+.lista-cursos .preco-curso-antigo{ color: #efbbba; font: 11px proxima_novasemibold; margin-top: 5px; display: inline-block; padding: 0 0 10px 10px; text-decoration: line-through; }
+.lista-cursos .preco-curso{ color: #000; font: 11px proxima_nova_rgbold; margin-top: 5px; display: inline-block; padding: 0 10px 10px; }
+
+.lista-cursos .preco-curso span{ font-family: proxima_nova_rgregular; }
+
+.lista-cursos .dados-curso{ font-size: 11px; line-height: 16px; margin: 6px 0 2px; padding: 0 10px; color: #6b6b6b; font-family: proxima_novasemibold; }
+.lista-cursos .dados-curso span:last-child{ margin-left: 10px; }
+
+
+.tooltip_curso{  position: absolute; top: 0; z-index: 99; right: -235px; display: none; padding: 0 0 0 20px; clip-depth: 2; }
+.tooltip_curso:after { content: ""; width: 20px; line-height: 40px; height: 20px; background: #fff; position: absolute; top: 37px; left: 10px; color: #FFF; text-align: center; -ms-transform: rotate(44deg); -webkit-transform: rotate(44deg); transform: rotate(44deg); z-index: 2; }
+
+.box-cursos-right .lista-cursos:nth-child(5) .tooltip_curso, .box-cursos-right .lista-cursos:nth-child(9) .tooltip_curso, .regular .lista-cursos:nth-child(n+5) .tooltip_curso{  z-index: -1; left: -254px !important; right: 0 !important; }
+.regular .lista-cursos:nth-child(n+5) .tooltip_curso:after{ right: 224px !important; left: initial; }
+
+.box-cursos-right .lista-cursos:nth-child(5), .box-cursos-right .lista-cursos:nth-child(9), .regular .lista-cursos:nth-child(n+5) { z-index: 9; }
+
+.box-cursos-right .lista-cursos:nth-child(5) .tooltip_curso:after, .box-cursos-right .lista-cursos:nth-child(9) .tooltip_curso:after{  right: 210px !important; left: initial; }
+
+.tooltip_curso .conteudo { background: #fff; width: 215px; position: relative; z-index: 2; border-radius: 5px; overflow: hidden; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 15px; }
+.tooltip_curso .conteudo strong{ padding: 0; margin-top: 0; width: 90%; overflow: initial; white-space: normal; }
+.tooltip_curso .conteudo small{ padding: 0; margin-top: 0; }
+.tooltip_curso .conteudo p{ font-size: 13px; line-height: 17px; margin-top: 10px; }
+.tooltip_curso .conteudo ul{ margin-left: 0; }
+.tooltip_curso .conteudo ul li{ font-size: 13px; line-height: 17px; margin-top: 2px; color: #6b6b6b; font-family: proxima_novasemibold; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tooltip_curso .conteudo ul li span{ font-size: 22px; }
+
+.tooltip_curso .conteudo .dados-curso{ font-size: 12px; line-height: 16px; margin: 10px 0 2px; color: #6b6b6b; font-family: proxima_novasemibold; }
+.tooltip_curso .conteudo .dados-curso span:last-child{ margin-left: 10px; }
+
+.tooltip_curso .conteudo a.adquira-curso{
+ background: rgba(153,204,0,1);
+ background: -moz-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+ background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(153,204,0,1)), color-stop(100%, rgba(123,164,0,1)));
+ background: -webkit-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+ background: -o-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+ background: -ms-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+ background: linear-gradient(to bottom, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cc00', endColorstr='#7ba400', GradientType=0 );
+   box-shadow: none;
+   height: 35px;
+   text-align: center;
+   color: #fff;
+   font-size: 14px;
+   padding: 7px;
+ font-family: proxima_nova_rgbold;
+ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+
+.lista-cursos a.leia_mais, .lista-cursos:hover a.leia_mais, .curso-destaque a.leia_mais{ box-shadow: initial; font-size: 12px; margin-bottom: 10px; }
+
+.tooltip_curso .conteudo .favorito{ position: absolute; right: 15px; top: 15px; font-size: 15px; box-shadow: none; background: transparent; color: #6b6b6b; }
+
+.tooltip_curso .conteudo .fa-heart{ color: #ad1d28; }
+
+.espaco-cursos { margin-top: 20px; }
+
+.box-cursos-right{ margin-left: -20px;  margin-top: 16px; }
+
+.box-carousel .lista-cursos{ width: 176px; margin-top: 20px; }
+
+.curso-especial{ position: absolute; top: -6px; left: -9px; }
+
+.prazo_final{ 
+ background: #cd5847;
+   font: 13px proxima_nova_rgregular;
+   color: #fff;
+   padding: 2px 4px;
+   text-align: center;
+   height: 21px;
+   top: 159px;
+   position: absolute;
+   z-index: 2;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 100%;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.slick-prev{ box-shadow: 0 0 5px rgba(0, 0, 0, 0.35); top: 28% !important; width: 40px !important; height: 70px !important; left: 2px !important; background-color: rgb(228, 228, 228) !important; background-size: 30% !important; background-position: center !important;}
+.slick-next{ box-shadow: 0 0 5px rgba(0, 0, 0, 0.35); top: 28% !important; width: 40px !important; height: 70px !important; right: 2px !important; background-color: rgb(228, 228, 228) !important; background-size: 30% !important; background-position: center !important;}
+/* Conteudo */
+
+/* curso integra */
+.mediabox-integra .descricao{ float: left !important; width: 60% !important; height: 265px; position: relative; }
+
+.mediabox-integra .descricao strong { margin-top: 104px !important; }
+.mediabox-integra .descricao small { font: 14px proxima_nova_rgregular; color: #fff; font-style: italic; }
+
+.mediabox_vendas .dados-curso{ font: 14px proxima_nova_rgregular; color: #fff; position: absolute; bottom: 9px; }
+.mediabox_vendas .dados-curso span{ margin-right: 10px; }
+
+.aprender-no-curso{ background: #f3f3f3; border-radius: 5px; padding: 20px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-top: 40px; }
+/*.aprender-no-curso strong{ color: #0c0c0c; font-family: proxima_nova_rgbold; font-size: 19px; }*/
+
+.aprender-no-curso .lista-aprender{ height: 78px; overflow: hidden; }
+.aprender-no-curso .lista-pre-requesitos{ height: 78px; overflow: hidden; }
+
+.aprender-no-curso p{ color: #6b6b6b; font-family: proxima_nova_rgregular; font-size: 15px; margin: 10px 0 0;}
+
+.aprender-no-curso ul{ margin: 10px 0 0; list-style: none; }
+.aprender-no-curso ul li{ color: #6b6b6b; font-family: proxima_nova_rgregular; font-size: 15px; margin-top: 5px; background: url(../../img/site2017/check.png) no-repeat 0px 4px; padding: 0 0 0 20px; background-size: 13px; }
+.aprender-no-curso ul li i{ color: #8bb229; margin-right: 5px; }
+
+.aprender-no-curso a { display: block; margin-top: 10px; color: #72ade5; margin-left: 25px; }
+
+.descricao-cursos hr { border-color: #efefef; margin-top: 25px; }
+.descricao-cursos strong{ color: #0c0c0c; font-family: proxima_nova_rgbold; font-size: 19px; }
+
+.texto-curso{ margin-top: 25px; }
+.texto-curso .descricao{ height: 117px; overflow: hidden; text-overflow: ellipsis; }
+.texto-curso a{ margin-top: 10px; display: block; color: #72ade5; }
+
+.texto-curso p{ color: #6b6b6b; font: 17px/25px proxima_nova_rgregular; margin-top: 15px; display: block; }
+
+
+.accordion{ margin-top: 20px; height: auto !important; }
+.accordion .accordion-group{ border-color: #f3f3f3; border-radius: 2px; margin-top: 4px; }
+.accordion a{ margin-top: 0; background: #f3f3f3; color: #6b6b6b; font: 15px/25px proxima_nova_rgregular; }
+.accordion a i{ margin-right: 5px; }
+.accordion p { color: #6b6b6b; font: 14px/20px proxima_nova_rgregular; margin-top: 15px; display: block; }
+
+
+.thumb-professor{ width: 120px; height: 120px; border-radius: 100px; overflow: hidden; margin: 30px auto 0; }
+.thumb-professor img{ height: 100%; max-width: inherit; }
+
+.social-professor { width: 100%; text-align: center; color: #6b6b6b; font: 16px/20px proxima_nova_rgregular; margin-top: 20px; }
+.social-professor a { width: 21px; display: inline-block; margin: 0 4px 10px; border-radius: 3px; color: #6b6b6b; }
+.social-professor i { font-size: 21px; position: relative; top: 3px; }
+
+.social-professor-email { width: 21px; background: #6b6b6b; display: inline-block; margin: 0 11px 0; border-radius: 3px; }
+.social-professor-email i{ margin: 0; font-size: 13px; color: #fff; top: 0; }
+
+.professor-right { padding-top: 24px; }
+.professor-right strong{}
+.professor-right p{ color: #6b6b6b; font: 17px/25px proxima_nova_rgregular; margin-top: 12px; }
+
+.professor-right .descricao{ height: 185px; overflow: hidden; }
+
+.carousel-integra .lista-cursos{ margin: 0 25px 30px; }
+
+.sidebar-integra{ margin-top: -155px; position: relative; z-index: 2; }
+
+.sidebar-integra .social{ text-align: right; color: #fff; margin-bottom: 6px; font: 14px/25px proxima_novasemibold; }
+.sidebar-integra .social a { color: #fff; }
+.sidebar-integra .social i { font-size: 16px; margin-left: 4px; }
+
+.video-curso{ border: 10px solid #aaaaaa; border-radius: 8px; height: 270px; box-shadow: 0 0 14px rgba(0, 0, 0, 0.35); margin-bottom: 0 !important; }
+.video-curso .slide-video{ height: 250px; width: 100%; }
+.video-curso .slide-video iframe{ height: 100%; width: 100%; }
+
+.descricao-preco{ padding: 20px 30px;  box-shadow: 0 0 14px rgba(0, 0, 0, 0.35); width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.video-curso .slick-dots li button:before{ font-size: 49px; }
+
+.video-curso .slick-dots{ bottom: -37px; }
+
+.descricao-preco .preco { font: 55px/45px proxima_nova_rgbold; color: #0c0c0c; display: block; margin-top: 20px; }
+.descricao-preco small { font: 14px proxima_nova_rgregular; color: #6b6b6b; font-style: italic; }
+
+.combo-preco { border: 1px solid #cbcbcb; border-radius: 4px; height: 37px; margin-top: 30px; }
+.combo-preco select{ border: 0; width: 99%; font: 17px/17px proxima_nova_rgregular; color: #6b6b6b; margin-top: 9px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 9px; height: 21px; }
+
+.combo-preco select:focus{ outline: none; }
+
+.descricao-preco .btn_comprar{
+   background: rgba(153,204,0,1);
+   background: -moz-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(153,204,0,1)), color-stop(100%, rgba(123,164,0,1)));
+   background: -webkit-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   background: -o-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   background: -ms-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   background: linear-gradient(to bottom, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cc00', endColorstr='#7ba400', GradientType=0 );
+   box-shadow: none;
+   height: 35px;
+   text-align: center;
+   color: #fff;
+   font-size: 14px;
+   padding: 7px;
+   font-family: proxima_nova_rgbold;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   border: 0 none;
+   width: 100%;
+   font-size: 19px;
+   height: 41px;
+   border-radius: 4px;
+   margin-top: 7px;
+   display: block;
+   box-shadow: 0px 4px 0 #5d7d1e;
+   line-height: 29px;
+}
+/*    
+   background: #cde59b; 
+   background: -moz-linear-gradient(top,  #cde59b 0%, #c1d399 100%); 
+   background: -webkit-linear-gradient(top,  #cde59b 0%,#c1d399 100%);
+   background: linear-gradient(to bottom,  #cde59b 0%,#c1d399 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cde59b', endColorstr='#c1d399',GradientType=0 );
+*/
+.descricao-preco .btn_favoritar{
+   
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d86a71+0,ad1d28+100 */
+background: rgb(216,106,113); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(216,106,113,1) 0%, rgba(173,29,40,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(216,106,113,1) 0%,rgba(173,29,40,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(216,106,113,1) 0%,rgba(173,29,40,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d86a71', endColorstr='#ad1d28',GradientType=0 ); /* IE6-9 */
+
+   height: 35px;
+   text-align: center;
+   color: #fff;
+   font-size: 14px;
+   padding: 7px;
+   font-family: proxima_nova_rgbold;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   border: 0 none;
+   width: 100%;
+   font-size: 19px;
+   height: 41px;
+   border-radius: 4px;
+   margin-top: 10px;
+   display: block;
+   line-height: 30px;
+   box-shadow: 0px 4px 0 #72151c;   
+}
+
+.bg_vermelho { 
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d86a71+0,ad1d28+100 */
+background: rgb(216,106,113); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(216,106,113,1) 0%, rgba(173,29,40,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(216,106,113,1) 0%,rgba(173,29,40,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(216,106,113,1) 0%,rgba(173,29,40,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d86a71', endColorstr='#ad1d28',GradientType=0 ); /* IE6-9 */
+   box-shadow: 0px 4px 0 #72151c;   
+
+}
+
+.lista-descricao-curso ul{ list-style: none; margin: 0; }
+.lista-descricao-curso li{ color: #6b6b6b; font-family: proxima_nova_rgregular; font-size: 17px; margin-top: 12px; background: url(../../img/site2017/check-cinza.png) no-repeat 0px 4px; padding: 0 0 0 20px; background-size: 13px; }
+.lista-descricao-curso li i{ /*color: #8bb229;  */ margin-right: 3px; font-size: 15px; }
+
+.divisao{ margin-bottom: 0; }
+
+.newsletter-curso { width: 100%; background: #f1f7e2; padding: 30px; margin-left: -30px; margin-bottom: -20px; }
+.newsletter-curso strong{ color: #0c0c0c; font-family: proxima_nova_rgbold; font-size: 19px; }
+.newsletter-curso p{ color: #6b6b6b; font: 17px/25px proxima_nova_rgregular; margin-top: 12px; }
+
+.newsletter-curso input{ width: 100%; font: 17px/17px proxima_nova_rgregular; color: #6b6b6b; margin-top: 9px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 9px; height: 42px; }
+.newsletter-curso button{
+   background: rgba(153,204,0,1);
+   background: -moz-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(153,204,0,1)), color-stop(100%, rgba(123,164,0,1)));
+   background: -webkit-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   background: -o-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   background: -ms-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   background: linear-gradient(to bottom, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cc00', endColorstr='#7ba400', GradientType=0 );
+   box-shadow: none;
+   height: 35px;
+   text-align: center;
+   color: #fff;
+   font-size: 14px;
+   padding: 9px;
+   font-family: proxima_nova_rgbold;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   border: 0 none;
+   width: 100%;
+   font-size: 22px;
+   height: 44px;
+   border-radius: 4px;
+   margin-top: 7px;
+   display: block;
+   box-shadow: 0px 4px 0 #5d7d1e;
+   line-height: 30px;
+}
+
+.lista-curriculos{ height: 165px; overflow: hidden; }
+
+.lista-curriculos ul { list-style: none; margin: 0; }
+/*.lista-curriculos li ul { list-style: none; margin: 0 0 0 x !important; }*/
+
+.area-aulas-curso{ padding: 0; }
+
+.lista-curriculos ul li {
+ color: #6b6b6b;
+   font-family: proxima_nova_rgregular;
+   font-size: 15px;
+   margin-top: 5px;
+   /* background: url(../../img/site2017/check.png) no-repeat 0px 4px; */
+   padding: 7px 20px 10px;
+   background-size: 13px;
+   border-bottom: 1px solid #f3f3f3;
+   position: relative;
+}
+
+.lista-curriculos ul li i{ margin-right: 5px; color: #cac3c3; }
+.lista-curriculos ul li a{ background: transparent; color: #1376d7; }
+.lista-curriculos ul li a small{ float: right; margin-right: 60px; }
+.lista-curriculos ul li span{ position: absolute; right: 20px; top: 10px; }
+
+.nav-preco-curso{ 
+ background: #767676; /* Old browsers */
+ background: -moz-linear-gradient(top,  #767676 0%, #4a4a4a 100%); /* FF3.6+ */
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#767676), color-stop(100%,#4a4a4a)); /* Chrome,Safari4+ */
+ background: -webkit-linear-gradient(top,  #767676 0%,#4a4a4a 100%); /* Chrome10+,Safari5.1+ */
+ background: -o-linear-gradient(top,  #767676 0%,#4a4a4a 100%); /* Opera 11.10+ */
+ background: -ms-linear-gradient(top,  #767676 0%,#4a4a4a 100%); /* IE10+ */
+ background: linear-gradient(to bottom,  #767676 0%,#4a4a4a 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#767676', endColorstr='#4a4a4a',GradientType=0 ); /* IE6-9 */
+ -webkit-box-shadow: 0 4px 16px #6c6c6c;
+ box-shadow: 0 4px 16px #6c6c6c;
+ width: 100%;
+ height: 80px;
+ float: left;
+ font: 16px proxima_nova_rgregular;
+ position: fixed;
+ bottom: 0;
+ left: 0;
+ z-index: 9999;
+ padding: 15px 20px;
+ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; 
+ display: none;
+}
+
+.f-nav-bottom{ display: block; }
+
+.nav-preco-curso strong { color: #fff; font-family: proxima_nova_rgbold; font-size: 19px; margin-top: 10px; }
+.nav-preco-curso small { font: 14px proxima_nova_rgregular; color: #fff; font-style: italic; }
+.nav-preco-curso a{ margin-left: 3px; color: #fff; }
+
+.nav-preco-curso .box-left { width: 50%; float: left; padding: 5px 0; }
+.nav-preco-curso .box-right { width: 50%; float: right; }
+
+.nav-preco-curso .box-right .combo-preco{ width: 50%; background: #fff; margin: 9px 0 0; float: left; }
+
+.nav-preco-curso .box-right .combo-preco select{ border: 0; width: 99%; font: 17px/17px proxima_nova_rgregular; color: #6b6b6b; margin-top: 9px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 9px; height: 21px; }
+
+.nav-preco-curso .box-right .combo-preco select:focus{ outline: none; }
+
+.nav-preco-curso .box-right .btn_comprar{
+   background: rgba(153,204,0,1);
+   background: -moz-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(153,204,0,1)), color-stop(100%, rgba(123,164,0,1)));
+   background: -webkit-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   background: -o-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   background: -ms-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   background: linear-gradient(to bottom, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cc00', endColorstr='#7ba400', GradientType=0 );
+   box-shadow: none;
+   height: 35px;
+   text-align: center;
+   color: #fff;
+   font-size: 14px;
+   padding: 7px;
+   font-family: proxima_nova_rgbold;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   border: 0 none;
+   width: 48%;
+   font-size: 19px;
+   height: 41px;
+   border-radius: 4px;
+   margin-top: 7px;
+   display: block;
+   box-shadow: 0px 4px 0 #5d7d1e;
+   float: right;
+   line-height: 30px;
+}
+
+.comentarios-curso {  }
+.comentarios-curso .title { color: #0c0c0c; font-family: proxima_nova_rgbold; font-size: 19px; }
+
+.dados-avaliacao span { font: 90px/90px proxima_nova_rgregular; color: #9fc92e; text-align: center; display: block; width: 100%; letter-spacing: -5px; }
+.dados-avaliacao small { color: #6b6b6b; font: 19px/21px proxima_nova_rgregular; margin-top: 0; text-align: center; display: block; }
+
+.lista-avaliacoes{ list-style: none; margin: 0; }
+.lista-avaliacoes li { width: 100%; float: left; margin-bottom: 5px; margin-top: 2px; }
+
+.lista-avaliacoes li .icones-avaliacao { width: 26%; float: left; }
+.lista-avaliacoes li .icones-avaliacao i{ color: #d8d8d8; }
+.lista-avaliacoes li .icones-avaliacao i.check{ color: #6a6a6a; }
+
+.lista-avaliacoes li .progress{ float: left; width: 58%;  border-radius: 0;  margin: 3px 0 0; background: transparent; box-shadow: inherit; }
+.lista-avaliacoes li .progress div{ background: #93c32e; height: 13px; }
+
+.lista-avaliacoes li small{ color: #6b6b6b; font: 15px/21px proxima_nova_rgregular; margin: 0 0 0 10px; }
+
+.area-avaliacao{ margin-top: 30px; border-right: 1px solid #ccc; padding: 22px 0px; width: 559px; }
+
+.ultimos-comentarios{ margin-top: 30px; }
+
+.thumb-usuario-comentarios{ width: 60px; overflow: hidden; border-radius: 30px; height: 60px; }
+
+.comentarios-usuario{ margin-bottom: 20px; }
+.comentarios-usuario strong{ color: #6a6a6a; font-family: proxima_novasemibold; font-size: 17px; display: block;}
+.comentarios-usuario small{ display: block; font: 11px proxima_nova_rgregular; color: #6a6a6a; margin-top: 3px; }
+.comentarios-usuario p{  color: #6b6b6b; font: 14px/16px proxima_nova_rgregular; margin-top: 6px; }
+
+.avaliacao-comentario-vazio p { color: #6b6b6b; font: 19px/16px proxima_nova_rgregular; margin-top: 6px; text-align: center; padding: 57px 0; }
+/* curso integra */
+
+.load {
+ background: url(../../img/site2014/loading.gif) no-repeat center center rgba(255,255,255,0.62);
+ z-index: 99;
+ height: 200px;
+ width: 100%;
+ top: 0;
+ left: 0;
+}
+
+
+/* Landing Page */
+.mediabox-lp{ width: 100%; /*min-height: 580px;*/ float: left; background-size: cover !important; background-position: center !important; }
+
+.mediabox-lp .logo { background: transparent; width: auto; position: relative; }
+.mediabox-lp .logo img{ width: 60%; margin: 20px 0 0; }
+
+.mediabox-lp .conteudo-mediabox{ margin-top: 30px; color: #fff; }
+.mediabox-lp .conteudo-mediabox h1{ color: #F0E68C; font: 48px/45px proxima_nova_rgbold; text-shadow: 2px 2px 0px #000; }
+.mediabox-lp .conteudo-mediabox h2{ margin-top: -10px; text-shadow: 2px 2px 0px #000; }
+.mediabox-lp .conteudo-mediabox p{ width: 40% }
+.mediabox-lp .conteudo-mediabox ul{ list-style: none; margin: 20px 0 0; }
+.mediabox-lp .conteudo-mediabox ul li{ margin-top: 10px; }
+
+.btn-green-lp{ background: #28a745!important; padding: 20px 30px; border-radius: 4px; font-size: 20px; color: #fff; margin: 40px 0 40px; display: table; width: 20%; text-align: center; }
+.btn-green-lp:hover{ color: #fff; }
+
+.media{ background: #17191d; height: 100px; width: 100%; float: left; margin-top: 0; }
+.media img{ width: 100%; margin-top: 6px; }
+.media span{ color: #7b7c7d; font-size: 17px; margin-top: 37px; display: block; text-align: right; }
+
+.box-lp{ font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif; }
+
+.bg-branco-landing-page{ padding: 30px 0; width: 100%; float: left;  }
+
+.titulo-landing-page h3{ font-weight: 300; font-size: 36px; text-align: center; }
+.titulo-landing-page h3:after { content: " "; width: 50px; height: 2px; display: block; border-top: 2px solid #007791; margin: 21px auto 50px; }
+
+.titulo-landing-page h4{ font-weight: 300; font-size: 20px; text-align: center; }
+
+.descricao-como-funciona p{ font-size: 15px; color: #686f7a; }
+
+.box-lp iframe{ border: 10px solid #fff; box-shadow: 2px 2px 11px 0px #00000026; }
+
+.bg-cinza-landing-page { padding: 30px 0; width: 100%; float: left; background: #f7f8fa; }
+
+.box-depoimentos { margin-top: 40px; }
+.box-depoimentos .div-body{ background: #fff; border: 1px solid #ccc; border-radius: 5px; padding: 30px; font-size: 18px; line-height: 27px; border-top: 6px solid #000; }
+
+.border-color-yellow{ border-top-color: #f4c150 !important; }
+.border-color-purple{ border-top-color: #853c6c !important; }
+.border-color-green{ border-top-color: #007791 !important; }
+
+.user-depoimento{  }
+.thumb-user{ text-align: center; margin-top: 20px; }
+.thumb-user img{ margin-bottom: 15px; }
+.user-body{}
+
+.descricao-como-funciona .thumb-professor{ width: 95px; height: 95px; margin-top: 40px; }
+.descricao-como-funciona .professor-left{ width: 100px; }
+.descricao-como-funciona .professor-right{ margin: -5px 0 0 20px; width: 72%; font-size: 13px; color: #686f7a; }
+
+.logo-rodape-lg{ }
+.logo-rodape-lg img{ float: left; }
+.logo-rodape-lg span{ color: #686f7a; font-size: 13px; margin: 20px 0 0 20px; display: block; float: left; }
+
+.menu-rodape-lp{ color: #686f7a; padding-top: 20px;font-size: 13px; }
+.menu-rodape-lp a{ color: #686f7a; }
+
+.modal-promocao{ border-radius: 0; }
+
+.modal-promocao .modal-body{ padding: 0; max-height: 500px !important; }
+.modal-promocao .header-modal-promocao{ background: #3cb778; padding: 35px 20px; font-size: 30px; font-weight: 700; text-align: center; color: #fff; }
+
+.modal-promocao .body-modal-promocao{ padding: 20px; }
+.modal-promocao .body-modal-promocao strong{ font-size: 25px; line-height: 35px; text-align: center; display: block; }
+.modal-promocao .body-modal-promocao span{ color: #ff5200; font-size: 33px; }
+
+.aproveitar-desconto{ font-size: 25px; line-height: 35px; font-weight: 700; text-align: center; color: #fff; background: #ff5200; display: block; padding: 18px 0; border-radius: 3px; }
+.aproveitar-desconto:hover{ color: #fff; }
+
+.link-simples{ display: block; text-align: center; font-size: 14px; }
+
+.modal-promocao .close{ position: absolute; right: 17px; top: 17px; font-size: 30px; }
+
+#sessao{ margin: 13px auto; width: max-content; padding: 17px 20px; font-size: 30px; }
+
+.logo{
+ background: transparent;
+}
+
+.btn-success{
+ padding: 8px 15px !important;
+ border-radius: 6px !important;
+ background-image: linear-gradient(180deg, #7fcc00 0%, #65a300 100%) !important;
+ border-bottom: 4px solid #4b7f00 !important;
+}
+
+.btn-danger{
+ padding: 8px 15px !important;
+ border-radius: 6px !important;
+ background-image: linear-gradient(180deg, #f5515f 0%, #9f041b 100%) !important;
+ border-bottom: 4px solid #700613 !important;
+}
+
+.border,
+.border-success{
+ background-color: transparent !important;
+}
+
+.planos{
+ height: auto;
+ background-image: url('../../img/bg-planos.png');
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.lista-planos{
+ background-color: #fff;
+ border-radius: 25px;
+}
+
+.lista-planos .numeros::before{
+ content: '';
+ background-color: #d9d9d9;
+ width: 75%;
+ height: 1px;
+ position: absolute;
+ top: 36%;
+ left: 0;
+ z-index: 1;
+ right: 0;
+ margin: auto;
+}
+
+.lista-planos .numeros .numero{
+ background-color: #e9e9e9;
+ border-radius: 100%;
+ width: 35px;
+ height: 35px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ z-index: 2;
+ border: 5px solid #fff;
+}
+
+.lista-planos .numeros .numero.active{
+ background-color: #d0021b;
+}
+
+.planos .planos-lista .span4{
+ margin-left: 0 !important;
+ width: 33.33333%;
+}
+
+.planos .lista-planos .row{
+ margin-left: 0 !important;
+}
+
+.planos .planos-lista .plano{
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
+ border-radius: 5px;
+ border: 1px solid #e3e3e3;
+ height: 450px;
+ cursor: pointer;
+ transition: all 0.5s;
+}
+
+.planos .planos-lista .plano:hover{
+ box-shadow: 0 8px 4px rgba(0, 0, 0, 0.3);
+ border-radius: 5px;
+ border: 3px solid #cacaca;
+}
+
+.plano .sub{
+ position: relative;
+ bottom: -0.35em;
+}
+
+.planos button{
+ padding: 20px 40px !important;
+ background-color: transparent !important;
+ border-radius: 10px !important;
+}

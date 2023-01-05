@@ -1,0 +1,100 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Playlist Switching Simulator</title>
+  <link rel="stylesheet" href="switcher.css">
+  <link rel="stylesheet" href="/node_modules/video.js/dist/video-js.css">
+</head>
+<body>
+  <div class="header-container">
+    <header class="wrapper clearfix">
+      <h1 class="title">Playlist Switching Simulator</h1>
+    </header>
+  </div>
+
+  <div class="main-container">
+    <div class="main wrapper clearfix">
+      <article>
+        <header>
+          <p>
+            You can use this page to visualize the behavior of the
+            playlist switcher under different network conditions. It
+            can helpful to understand how tweaks to the switching
+            logic will affect playback.
+          </p>
+        </header>
+        <section>
+          <h2>Timeline</h2>
+          <p class=timeline>Simulation results will show up here</p>
+          <button id=run-simulation type=submit>Run Simulation</button>
+        </section>
+        <section>
+          <h2>Parameters</h2>
+          <form id=parameters>
+            <ol class=network-timeline>
+              <li>
+                <label>
+                  After <input name=time0 class=time type=number value=0 min=0> seconds,
+                </label>
+                <label>
+                  the link capacity is <input name=bandwidth0 class=bandwidth type=number value=250000> bits per second
+                </label>
+              </li>
+              <li>
+                <label>
+                  After <input name=time1 class=time type=number value=150 min=0> seconds,
+                </label>
+                <label>
+                  the link capacity is <input name=bandwidth1 class=bandwidth type=number value=500000> bits per second
+                </label>
+              </li>
+              <li>
+                <label>
+                  After <input name=time2 class=time type=number value=600 min=0> seconds,
+                </label>
+                <label>
+                  the link capacity is <input name=bandwidth2 class=bandwidth type=number value=250000> bits per second
+                </label>
+              </li>
+            </ol>
+            <p>
+              You can simulate more complex network conditions by
+              changing the bandwidth during the run. Start a new time
+              period and then define its starting time and link
+              capacity.
+              <button type=button class=add-time-period>Add time period</button>
+            </p>
+            <p>
+              If you've created a complex scenario you'd like to retry
+              later, run the simulation and then save the URL of this
+              page. All of the network conditions you specify are
+              saved into the URL fragment after the results of a
+              simulation run are displayed.
+            </p>
+            The video is available at
+            <ul>
+              <li><input class=bitrate type=number min=1 value=52400> bits per second</li>
+              <li><input class=bitrate type=number min=1 value=129600> bits per second</li>
+              <li><input class=bitrate type=number min=1 value=212500> bits per second</li>
+              <li><input class=bitrate type=number min=1 value=312500> bits per second</li>
+            </ul>
+          </form>
+        </section>
+      </article>
+
+    </div>
+  </div>
+
+  <div class="footer-container">
+    <footer class="wrapper">
+      <h3>videojs-contrib-hls</h3>
+    </footer>
+  </div>
+  <div id="qunit-fixture"></div>
+  <script src="/node_modules/sinon/pkg/sinon.js"></script>
+  <script src="/node_modules/video.js/dist/video.js"></script>
+  <script src="/dist/videojs-contrib-hls.js"></script>
+  <script src="/node_modules/d3/d3.min.js"></script>
+  <script src="/dist/switcher.js"></script>
+</body>
+</html>

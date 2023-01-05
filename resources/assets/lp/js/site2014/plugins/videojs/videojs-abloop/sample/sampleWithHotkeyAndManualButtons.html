@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="http://vjs.zencdn.net/5.6.0/video-js.css" rel="stylesheet">
+	<title>AB loop test page</title>
+	<style>
+	button.vjs-control.vjs-button.abLoopButton {
+		xbackground: linear-gradient(45deg, rgba(0,0,255,.3) 15%, transparent);
+	}
+	</style>
+</head>
+
+<body>
+	<h2>AB loop test page</h2>
+
+	<video id="video0" class="video-js" controls preload="auto"  width="640" height="264"
+	  poster="http://vjs.zencdn.net/v/oceans.png" data-setup='{"fluid": false,"playbackRates": [0.1, 0.2, 0.5, 1, 2, 5]}'>
+		<source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
+		<source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'>
+		<source src="http://vjs.zencdn.net/v/oceans.ogv" type='video/ogg'>
+		<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+	</video>
+	
+	<br />
+
+	<script src="http://vjs.zencdn.net/5.6.0/video.js"></script>
+	<script src="../videojs-abLoop.js"></script>
+	<script src="videojs.hotkeys.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.0/lodash.min.js"></script>
+
+	<script>
+
+	var videos;
+	var buttonSpecs;
+	(function(){
+
+		//specs for buttons to create
+		buttonSpecs = {
+			'start': {
+				'leftclick':function(abLoopPlugin){abLoopPlugin.setStart();}
+				,'rightclick':function(abLoopPlugin){abLoopPlugin.goToStart();}
+				,'defaultText':'Start'
+				,'textFunction':function(opts){
+					return videojs.formatTime(opts.start) + '.' + ((opts.start % 1) * 10).toFixed(0);
+				}
+			},
+			'end': {
+				'leftclick':function(abLoopPlugin){abLoopPlugin.setEnd();}
+				,'rightclick':function(abLoopPlugin){abLoopPlugin.goToEnd();}
+				,'defaultText':'End'
+				,'textFunction':function(opts){
+					return videojs.formatTime(opts.end) + '.' + ((opts.end % 1) * 10).toFixed(0);
+				}
+			},
+			'enabled': {
+				'leftclick':function(abLoopPlugin){abLoopPlugin.toggle();}
+				,'rightclick':function(abLoopPlugin){abLoopPlugin.togglePauseOnLoop();}
+				,'defaultText':'Loop'
+				,'textFunction':function(opts){
+					return opts.enabled ? (opts.pauseOnLoop ?  'LOOP&\nPAUSE': 'LOOP ON' )  : 'Loop\noff';
+				}
+			}
+		};
+		//makes details for a custom hotkey
+		var hotKeySpec = function(spec){
+			_.defaultsDeep(spec, {
+				key:undefined
+				,modifiers: {ctrl:false,shift:false,alt:false, meta:false}
+				,handler: function(player,options){}   // function(player,options){player.doSomething();}
+			});
+			
+			return {
+				key: function(e) {
+					//console.log(e.which);
+					return (
+						(e.which === spec.key ) && 
+						(!!spec.modifiers.ctrl === !!e.ctrlKey) &&
+						(!!spec.modifiers.shift === !!e.shiftKey) &&
+						(!!spec.modifiers.alt === !!e.altKey) &&
+						(!!spec.modifiers.meta === !!e.metaKey)
+					);
+				},
+				handler: spec.handler
+			};
+		};	
+
+		var skip = function(change){
+			return function(player){
+				var newTime = player.currentTime() + (change);
+				// The flash player tech will allow you to seek into negative
+				// numbers and break the seekbar, so try to prevent that.
+				if (newTime <= 0) {newTime = 0;}
+				player.currentTime(newTime);
+			};
+		};		
+		
+		var speedChange = function(change){
+			return function(player){
+				var speed = player.playbackRate() + change;
+				speed = speed.toFixed(2);
+				if (speed >= 0 && speed <= 50){
+					player.playbackRate(speed);
+				}
+			};
+		};
+		
+		videos = [
+			videojs("video0",{
+				plugins: {
+
+				}	
+			})
+		];
+		
+		videos[0].ready(function(){
+
+			this.abLoopPlugin({
+				start:5    //seconds
+				,end:10    //leave out or set to false to loop to end of video
+				,enabled:false
+				,loopIfBeforeStart:true       //allow video to play normally before the loop section?
+				,loopIfAfterEnd:true
+				,pauseAfterLoop: false     //if true, after looping video will pause
+				,pauseBeforeLoop: false     //if true, after looping video will pause
+				,createButtons: false
+				,onOptionsChange: function(opts,api,player){
+					//update button displays if not already done
+					['start','end','enabled','pauseBeforeLoop'].forEach(function(n){
+						if (opts.changed[n]){
+							if (n=='pauseOnLoop'){n='enabled';}   
+							if (buttonSpecs[n] && buttonSpecs[n].button && buttonSpecs[n].button.updateText){
+								buttonSpecs[n].button.updateText();
+							}
+						}
+					});
+				}
+			});
+
+
+			
+			var createABLoopButton = function(spec, buttonName,player){
+				
+				//returns a function which handles button clicks,
+				var clickFunction = function(abLoopCall,whichButton){
+					return function(event){
+						if (whichButton == undefined || (event.which && event.which == whichButton)) {
+							p = this.player();
+							if ( p.abLoopPlugin != undefined && p.abLoopPlugin.loaded){
+								abLoopCall(p.abLoopPlugin);
+								this.updateText();
+							}
+						}
+					};
+				}
+
+				//returns a function which handles button text updates
+				var updateTextFunction = function(defaultText,textFunction){
+					return function(){
+						var text;
+						var p = this.player();
+						if ( p.abLoopPlugin != undefined && p.abLoopPlugin.loaded){
+							text = textFunction(p.abLoopPlugin.getOptions()) ;
+						}
+						this.el().innerText = text || defaultText;
+					}
+				}
+				
+				//create the button
+				spec.button = player.controlBar.addChild('Button');
+				
+				var b = spec.button; 
+				if (spec['leftclick']){
+					b.on('click',clickFunction(spec.leftclick));
+				}
+				if (spec['rightclick']){
+					//event which 
+					//bind the function as it isn't bound by default
+					b.el().onmousedown = clickFunction(spec.rightclick,3).bind(b);
+					//knock out the context menu
+					b.on('contextmenu', function(event) {
+						event.preventDefault();
+						event.stopPropagation();
+						return false;	
+					});
+				}
+
+				//gets called when text on button needs updating
+				b.updateText = updateTextFunction(spec.defaultText,spec.textFunction);
+				b.addClass('abLoopButton');
+				b.addClass(buttonName);
+				b.updateText();	//set the initial text
+			}
+			
+			//create the buttons based on the specs
+			for (var buttonName in buttonSpecs){
+				createABLoopButton( buttonSpecs[buttonName],buttonName, videos[0]);
+			}			
+			this.hotkeys({
+				volumeStep: 0.1,
+				seekStep: 5,
+				alwaysCaptureHotkeys: true,
+				customKeys: {
+					slowDownArBr: hotKeySpec({key:188,handler:speedChange(-0.1)})	    // 188 = <
+					,speedUp: hotKeySpec({key:190,handler:speedChange(0.1)})	 	// 190 = >
+					,bigSlowDown: hotKeySpec({key:188,modifiers:{shift:true}, handler:speedChange(-0.5)})					
+					,bigSpeedUp: hotKeySpec({key:190,modifiers:{shift:true}, handler:speedChange(0.5)})
+					,normalSpeedN: hotKeySpec({key:78,handler:function(p){p.playbackRate(1);}})    // 78 = n
+					,smallSkipBackZ: hotKeySpec({key:90,handler:skip(-2)})    // 90 = z
+					,vSmallSkipBack: hotKeySpec({key:90,handler:skip(-0.5),modifiers:{shift:true}})   
+					,smallSkipForward: hotKeySpec({key:88,handler:skip(2)})    // 88 =x 
+					,vSmallSkipForward: hotKeySpec({key:88,handler:skip(0.5),modifiers:{shift:true}})    
+					,startLoopA: hotKeySpec({key:65,handler:function(p){p.abLoopPlugin.setStart();}})
+					,endLoopB: hotKeySpec({key:66,handler:function(p){p.abLoopPlugin.setEnd();}})
+					,enableLoopL:hotKeySpec({key:76,handler:function(p){p.abLoopPlugin.toggle();}})
+					,goToStartKeySqBr:hotKeySpec({key:219,handler:function(p){p.abLoopPlugin.goToStart();}})
+					,goToEndSqBr:hotKeySpec({key:221,handler:function(p){p.abLoopPlugin.goToEnd();}})
+					,togglePauseOnLoopK: hotKeySpec({key:75,handler:function(p){p.abLoopPlugin.togglePauseOnLoop();}})
+				}					
+			});
+		});
+		//start the first video
+		videos[0].play();
+		
+		//create some buttons
+		//still need to add the icons and status change indication
+		
+
+
+
+	})();
+	</script>
+
+</body>
+</html>

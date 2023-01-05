@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="video-js.css" rel="stylesheet">
+	<title>AB loop test page</title>
+	<style>
+	button.vjs-control.vjs-button.abLoopButton {
+		xbackground: linear-gradient(45deg, rgba(0,0,255,.3) 15%, transparent);
+	}
+	</style>
+</head>
+
+<body>
+	<h2>AB loop test page</h2>
+
+	<video id="video0" class="video-js" controls preload="auto"  width="640" height="264"
+	  poster="http://vjs.zencdn.net/v/oceans.png" data-setup='{"controlBar": { "currentTimeDisplay": true,"muteToggle": false },"fluid": false,"playbackRates": [0.1, 0.2, 0.5, 1, 2, 5]}'>
+		<source src="oceans.mp4" type='video/mp4'>
+
+	</video>
+	
+	<br />
+
+	<script src="video.js"></script>
+	<script src="../videojs-abloop.js"></script>
+	<script src="videojs.hotkeys.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.0/lodash.min.js"></script>
+
+	<script>
+
+	var videos;
+
+	(function(){
+
+		//makes details for a custom hotkey
+		var hotKeySpec = function(spec){
+			/*_.defaultsDeep(spec, {
+				key:undefined
+				,modifiers: {ctrl:false,shift:false,alt:false, meta:false}
+				,handler: function(player,options){}   // function(player,options){player.doSomething();}
+			});*/
+			spec.modifiers = spec.modifiers || {};
+			
+			return {
+				key: function(e) {
+					//console.log(e.which);
+					return (
+						(e.which === spec.key ) && 
+						(!!spec.modifiers.ctrl === !!e.ctrlKey) &&
+						(!!spec.modifiers.shift === !!e.shiftKey) &&
+						(!!spec.modifiers.alt === !!e.altKey) &&
+						(!!spec.modifiers.meta === !!e.metaKey)
+					);
+				},
+				handler: spec.handler
+			};
+		};	
+
+		var skip = function(change){
+			return function(player){
+				var newTime = player.currentTime() + (change);
+				// The flash player tech will allow you to seek into negative
+				// numbers and break the seekbar, so try to prevent that.
+				if (newTime <= 0) {newTime = 0;}
+				player.currentTime(newTime);
+			};
+		};		
+		
+		var speedChange = function(change){
+			return function(player){
+				var speed = player.playbackRate() + change;
+				speed = speed.toFixed(2);
+				if (speed >= 0 && speed <= 50){
+					player.playbackRate(speed);
+				}
+			};
+		};
+		
+		videos = [
+			videojs("video0",{
+				plugins: {
+
+				}	
+				,cxxontrolBar: {
+					CurrentTimeDisplay: true
+					,muteToggle: false
+				}
+			})
+		];
+		
+		videos[0].ready(function(){
+
+			this.abLoopPlugin();
+		
+			this.hotkeys({
+				volumeStep: 0.1,
+				seekStep: 5,
+				alwaysCaptureHotkeys: true,
+				customKeys: {
+					slowDownArBr: hotKeySpec({key:188,handler:speedChange(-0.1)})	    // 188 = <
+					,speedUp: hotKeySpec({key:190,handler:speedChange(0.1)})	 	// 190 = >
+					,bigSlowDown: hotKeySpec({key:188,modifiers:{shift:true}, handler:speedChange(-0.5)})					
+					,bigSpeedUp: hotKeySpec({key:190,modifiers:{shift:true}, handler:speedChange(0.5)})
+					,normalSpeedN: hotKeySpec({key:78,handler:function(p){p.playbackRate(1);}})    // 78 = n
+					,smallSkipBackZ: hotKeySpec({key:90,handler:skip(-2)})    // 90 = z
+					,vSmallSkipBack: hotKeySpec({key:90,handler:skip(-0.5),modifiers:{shift:true}})   
+					,smallSkipForward: hotKeySpec({key:88,handler:skip(2)})    // 88 =x 
+					,vSmallSkipForward: hotKeySpec({key:88,handler:skip(0.5),modifiers:{shift:true}})    
+					,startLoopA: hotKeySpec({key:65,handler:function(p){p.abLoopPlugin.setStart();}})
+					,endLoopB: hotKeySpec({key:66,handler:function(p){p.abLoopPlugin.setEnd();}})
+					,incLoopStart: hotKeySpec({key:65,modifiers:{shift:true},handler:function(p){p.abLoopPlugin.adjustStart(0.1);}})
+					,decLoopStart: hotKeySpec({key:65,modifiers:{ctrl:true},handler:function(p){p.abLoopPlugin.adjustStart(-0.1);}})
+					,incLoopEnd: hotKeySpec({key:66,modifiers:{shift:true},handler:function(p){p.abLoopPlugin.adjustEnd(0.1);}})
+					,decLoopEnd: hotKeySpec({key:66,modifiers:{ctrl:true},handler:function(p){p.abLoopPlugin.adjustEnd(-0.1);}})
+					,enableLoopL:hotKeySpec({key:76,handler:function(p){p.abLoopPlugin.toggle();}})
+					,goToStartKeySqBr:hotKeySpec({key:219,handler:function(p){p.abLoopPlugin.goToStart();}})
+					,goToEndSqBr:hotKeySpec({key:221,handler:function(p){p.abLoopPlugin.goToEnd();}})
+					,togglePauseOnLoopK: hotKeySpec({key:75,handler:function(p){p.abLoopPlugin.cyclePauseOnLoopStatus();}})
+				}					
+			});
+		});
+		//start the first video
+		videos[0].play();
+		
+		//create some buttons
+		//still need to add the icons and status change indication
+		
+
+
+
+	})();
+	</script>
+
+</body>
+</html>

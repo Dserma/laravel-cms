@@ -1,0 +1,1664 @@
+@media (min-width: 980px) and (max-width: 1024px) {
+    #UsuarioCupom {
+        width: 90px;
+        float: left;
+    }
+    .logo {
+        width: 20%;
+    }
+    .nav {
+        font-size: 11px !important;
+        margin: 40px 0 0 0 !important;
+        float: right !important;
+    }
+    .navbar a.border {
+        margin-top: 40px;
+        float: right !important;
+    }
+    .navbar a.border span.btn {
+        font-size: 11px !important;
+        padding: 7px 12px 5px !important;
+    }
+    .menu-opcoes-usuario {
+        margin: 46px 0 0 !important;
+    }
+    .logo img {
+        width: 80%;
+    }
+    .menu-opcoes-usuario .btn-primary {
+        font: 15px proxima_novasemibold;
+        padding-right: 0;
+    }
+    .nav li {
+        font: 14px proxima_novasemibold;
+    }
+    .nav li a {
+        padding: 10px 8px 10px !important;
+    }
+    .content-mediabox h3 {
+        font-size: 37px;
+        line-height: 51px;
+    }
+    .content-mediabox strong {
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: 30px;
+    }
+    .content-mediabox p {
+        font: 18px/24px proxima_novasemibold;
+        margin-top: 30px;
+    }
+    .content-mediabox .border {
+        margin-top: 7px;
+    }
+    /* home 
+	.container-home{margin-top: -65px;}
+	/* home */
+    /* apresentacao */
+    .content-apresentacao {
+        margin-top: 20px;
+    }
+    .content-apresentacao h3 {
+        font-size: 24px;
+        line-height: 24px;
+        margin-top: 0;
+    }
+    .content-apresentacao li {
+        font-size: 14px;
+    }
+    .content-apresentacao iframe {
+        width: 100%;
+        height: 257px;
+        border: 0;
+    }
+    .apresentacao {
+        position: relative;
+        padding-bottom: 15px;
+        float: left;
+    }
+    /* apresentacao */
+    /* destaque dos cursos */
+    .destaque-cursos {
+        margin-top: 30px;
+        float: left;
+    }
+    .destaque-cursos h4 {
+        margin: 0;
+    }
+    .boxes-cursos-destaque {
+        margin-top: 40px;
+    }
+    .boxes-cursos-destaque h5 {
+        font: 18px/22px proxima_novasemibold;
+        color: #4f5667;
+    }
+    .boxes-cursos-destaque a.border {
+        letter-spacing: 0px;
+    }
+    .boxes-cursos-destaque a.border span.icone {
+        padding: 11px 10px 10px;
+        letter-spacing: 0px;
+    }
+    /* destaque dos curoso */
+    .box-social-rodape img {
+        margin-right: 10px;
+    }
+    .login-top .navbar a.border {
+        margin-top: 30px !important;
+    }
+    .form-login .span3 {
+        width: 49%;
+    }
+    .form-login .span2 {
+        float: right;
+    }
+    .box-btn-news .border span.btn {
+        font-size: 12px;
+    }
+    /*.hidden-tablet{display: none;}*/
+    .aviso-aulas-ao-vivo .border span.btn {
+        padding: 6px 11px 2px;
+        width: 76%;
+    }
+    .grid {
+        margin-top: 11px;
+        display: block;
+    }
+    .lista {
+        margin-top: 11px;
+        display: block;
+    }
+    .hidden-ipad-vertical {
+        display: none;
+    }
+    /* planos */
+    .preco_plano {
+        text-align: center;
+        margin: 20px auto 56px;
+        height: 42px;
+    }
+    .preco_plano .span_cifrao {
+        font-size: 27px;
+        line-height: 36px;
+    }
+    .preco_plano .span_mes {
+        font-size: 18px;
+        line-height: 36px;
+    }
+    .preco_plano .span_valor {
+        font-size: 46px;
+    }
+    .tooltip_planos {
+        width: 243px !important;
+    }
+    .tool_header {
+        padding: 17px 10px;
+    }
+    /* planos */
+    /* modulos */
+    .box-btn-busca-avancada .border span.btn {
+        width: 135px;
+    }
+    /* modulos */
+    /* perfil */
+    .barra-escolha-plano {
+        padding: 10px 0;
+        margin-top: 15px;
+    }
+    .box-cadastro h3 {
+        color: #fff;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .novo-plano {
+        margin-top: 20px;
+    }
+    /* perfil */
+    .hidden-tablet-title {
+        display: none;
+    }
+    .hidden-desktop-title {
+        display: block;
+        margin-top: 25px;
+    }
+    .hidden-tablet-novidade {
+        display: block;
+    }
+    .hidden-desktop-novidade {
+        display: none;
+    }
+    .hidden-tablet-geral {
+        display: block;
+    }
+    .hidden-desktop-geral {
+        display: block;
+    }
+    .visible-tablet-geral {
+        display: none;
+    }
+    .visible-desktop-alunos {
+        display: none;
+    }
+    .visible-tablet-alunos {
+        display: block;
+    }
+    .player .hidden-desktop {
+        display: block !important;
+    }
+    .player .visible-desktop {
+        display: none !important;
+    }
+    .filtro-buscador .hidden-desktop-title {
+        margin-top: 10px;
+    }
+    .box-campo-busca form {
+        margin: 0;
+    }
+    .btn_reset {
+        display: block;
+        margin-top: 20px;
+        text-align: left;
+    }
+    /* aula */
+    .container-video {
+        height: 349px;
+    }
+    .container-video iframe {
+        height: 349px;
+        width: 619px;
+    }
+    .nav-tabs {
+        margin-top: -37px !important
+    }
+    .ul_player {
+        width: 99% !important;
+    }
+    #barra_progresso_li {
+        width: 75% !important;
+        margin-right: 0px;
+    }
+    .conteudo-aula {
+        margin-top: 10px;
+        min-height: 418px;
+        position: relative;
+        padding-bottom: 34px;
+    }
+    .conteudo-aula ol {
+        height: 311px;
+        overflow: auto;
+    }
+    .social-player li a {
+        padding: 10px 13px 10px 14px;
+        float: left;
+        color: #BBBBBB;
+        text-decoration: none;
+    }
+    /* blog */
+    .post-destaque-blog {
+        padding-bottom: 47px;
+        position: relative;
+        min-height: 200px !important;
+    }
+    /* blog */
+    .aviso-aulas-ao-vivo div.aula p {
+        width: 114px;
+    }
+    /* professor */
+    .img-destaque iframe {
+        margin-top: 34px;
+        height: 223px;
+    }
+    .visible-tablet-apresentacao {
+        display: block
+    }
+    .visible-desktop-apresentacao {
+        display: none;
+    }
+    .hidden-tablet-tab {
+        display: none;
+    }
+    .video_introdutorio {
+        margin: 31px 0 0 26px;
+        height: 291px;
+        width: 420px;
+    }
+    /* cursos */
+    .descricao-curso-desktop {
+        display: none;
+    }
+    .descricao-curso-tablet-vt {
+        display: none;
+    }
+    .descricao-curso-tablet-hr {
+        display: block;
+    }
+    .pag-alunos .curso-aluno {
+        min-height: 300px;
+    }
+    .box-grade-curso .span12 {
+        margin-left: 45px !important;
+    }
+    /* pesquisa */
+    .tabela-pesquisa label {
+        float: left;
+        width: 93%;
+        margin-left: 10px;
+    }
+    #UsuarioCupom {
+        width: 90px;
+        float: left;
+    }
+    .logo {
+        width: 20%;
+    }
+    .nav {
+        font-size: 11px !important;
+        margin: 40px 0 0 0 !important;
+        float: right !important;
+    }
+    .navbar a.border {
+        margin-top: 40px;
+        float: right !important;
+    }
+    .navbar a.border span.btn {
+        font-size: 11px !important;
+        padding: 7px 12px 5px !important;
+    }
+    .menu-opcoes-usuario {
+        margin: 46px 0 0 !important;
+    }
+    .logo img {
+        width: 80%;
+    }
+    .menu-opcoes-usuario .btn-primary {
+        font: 15px proxima_novasemibold;
+        padding-right: 0;
+    }
+    .nav li {
+        font: 14px proxima_novasemibold;
+    }
+    .nav li a {
+        padding: 10px 8px 10px !important;
+    }
+    .content-mediabox h3 {
+        font-size: 37px;
+        line-height: 51px;
+    }
+    .content-mediabox strong {
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: 30px;
+    }
+    .content-mediabox p {
+        font: 18px/24px proxima_novasemibold;
+        margin-top: 30px;
+    }
+    .content-mediabox .border {
+        margin-top: 7px;
+    }
+    /* vendas */
+    .mediabox-vendas .span7 {
+        width: 80%;
+    }
+    .vantagens-cursos .span12 img.borda {
+        top: 224px;
+    }
+    .area-curso-e-login button .btn-success {
+        width: 85%;
+    }
+    .area-curso-e-login strong {
+        font: 25px proxima_novaextrabold;
+        line-height: 32px;
+        color: #4b5568;
+        margin: 0px 0;
+        display: block;
+    }
+    .area-curso-e-login p {
+        margin-top: 10px;
+    }
+    .area-curso-e-login .area-curso strong {
+        margin-top: 10px;
+    }
+    .exibicao-total-curso .descricao-curso {
+        padding: 20px 0 0 20px;
+        float: left;
+        width: 41%;
+    }
+    .exibicao-total-curso .descricao-curso strong {
+        font: 24px proxima_novaextrabold;
+        line-height: 26px;
+    }
+    .area-preco span {
+        font: 24px proxima_novasemibold;
+    }
+    .area-data span {
+        font: 24px proxima_novasemibold;
+    }
+    .exibicao-total-curso .border-success {
+        margin: 20px 0;
+    }
+    .exibicao-ultimo-curso strong {
+        font: 22px/24px proxima_novaextrabold !important;
+    }
+    .alinhamento-planos {
+        margin: 0 auto;
+        width: 780px;
+        height: 300px;
+    }
+    .circulo-vantagem {
+        height: 180px !important;
+        width: 180px !important;
+    }
+    .area-aluno #myTab a {
+        padding: 25px 18px 20px 19px !important;
+    }
+    .g-recaptcha {
+        transform: scale(0.65);
+        -webkit-transform: scale(0.65);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
+    .border .btn-news {
+        padding: 8px 14px 6px !important;
+    }
+    .titulo-conteudo-aba {
+        font-size: 34px;
+    }
+    .busca-por-materiais form input {
+        width: 93.5%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .alinhamento-planos {
+        margin: 0 auto;
+        width: 580px;
+        height: 300px;
+    }
+    .logo {
+        width: 20% !important;
+        margin-left: 20px;
+    }
+    .menu-topo .btn-navbar {
+        margin: 29px 0 0 10px;
+    }
+    .header-planos .nav {
+        margin-top: 20px !important;
+    }
+    .nav-table {
+        margin-top: 23px !important;
+    }
+    .navbar a.border {
+        margin-top: 30px !important;
+        float: right !important;
+    }
+    a.border span.btn {
+        font-size: 11px !important;
+        padding: 7px 12px 5px !important;
+        /*width: 73% !important*/
+    }
+    a.border span.b-icon {
+        padding: 12px 10px 9px;
+    }
+    .box-cadastro-form a.border span.btn {
+        font-size: 13px !important;
+        padding: 9px 12px 9px !important;
+    }
+    .logo img {
+        width: 80%;
+    }
+    .menu-opcoes-usuario .btn-primary {
+        font: 15px proxima_novasemibold;
+        padding-right: 0;
+    }
+    .nav li {
+        font: 14px proxima_novasemibold;
+    }
+    .nav li a {
+        padding: 10px 12px 10px !important;
+    }
+    .nav li {
+        font: 14px proxima_novasemibold;
+    }
+    .navbar .container {
+        position: relative;
+    }
+    .nav-collapse .nav {
+        margin: 0;
+        list-style: none;
+        padding: 0;
+        float: right;
+        border: 1px solid #eee;
+        width: 44%;
+        background: #fff;
+        height: auto;
+    }
+    .nav-collapse .nav li {
+        border-left: 0 none;
+        float: left;
+        width: 100%;
+        border-bottom: 3px solid #eee;
+    }
+    .nav-collapse .nav li a {
+        color: #333 !important;
+        text-transform: none;
+    }
+    .nav {
+        float: right !important;
+        font-size: 11px !important;
+    }
+    .nav a:hover {
+        background-color: transparent !important;
+    }
+    .navbar .nav-collapse {
+        position: absolute;
+        right: 0px;
+        top: 64px;
+    }
+    .nav-tabs {
+        margin-top: -37px !important
+    }
+    /* menu fixo */
+    .btn-navbar-fixo {
+        margin: 5px 0 0 10px !important;
+    }
+    .nav-collapse-fixo {
+        width: 100%;
+        position: absolute;
+        top: 42px;
+        overflow: hidden;
+    }
+    .nav-collapse-fixo .nav-fixo li {
+        border-left: 0 none;
+        float: left;
+        padding: 10px 14px !important;
+        width: 89%;
+        border-bottom: 3px solid #eee;
+    }
+    .nav-collapse-fixo .nav-fixo {
+        margin: 0;
+        list-style: none;
+        padding: 0;
+        float: right;
+        border: 1px solid #eee;
+        width: 19%;
+        background: #fff;
+        height: auto;
+    }
+    .nav-collapse-fixo .nav-fixo a {
+        color: #333;
+    }
+    .navbar .menu-opcoes-usuario {
+        margin-top: 34px !important;
+    }
+    .menu-opcoes-usuario .btn-primary {
+        font: 15px proxima_novasemibold;
+    }
+    .menu-fixo .menu-opcoes-usuario {
+        margin-top: 0px !important;
+    }
+    .menu-fixo .dropdown-toggle {
+        font-size: 14px !important;
+        padding: 0;
+    }
+    .menu-fixo .menu-opcoes-usuario .dropdown-menu {
+        left: -114px;
+    }
+    .nav-fixo li {
+        float: left;
+        padding: 20px 14px 5px;
+    }
+    .btn-navbar-fixo {
+        margin-top: 15px !important;
+        background: none !important;
+    }
+    .in .nav-fixo li i.b-icon-plus {
+        background: url(../../img/site2014/b-icon-plus.jpg) no-repeat 0 0 transparent;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 9px;
+        top: 9px;
+    }
+    .in .nav-fixo li i.b-icon-login {
+        background: url(../../img/site2014/b-icon-login.jpg) no-repeat 0 0 transparent;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 9px;
+        top: 9px;
+    }
+    .nav-fixo li i.b-icon-plus {
+        top: 20px;
+    }
+    .nav-fixo li i.b-icon-login {
+        top: 20px;
+    }
+    /* menu fixo */
+    .border span.icone {
+        padding: 11px 10px 10px;
+    }
+    .content-mediabox h3 {
+        font-size: 25px;
+        line-height: 35px;
+        margin: 0 0 0 20px !important;
+    }
+    .content-mediabox strong {
+        font-size: 20px;
+        line-height: 23px;
+        margin: 15px 0 0 20px;
+        display: block;
+    }
+    .content-mediabox p {
+        font: 14px/14px proxima_novasemibold;
+        margin: 10px 0 0 20px;
+    }
+    .content-mediabox .border {
+        margin: 13px 0 0 20px;
+    }
+    .item {
+        height: 500px !important;
+    }
+    .teste {
+        right: 103px !important;
+    }
+    /* home 
+	.container-home{margin-top: -44px;}
+	/* home */
+    /* apresentacao */
+    .content-apresentacao {
+        margin-top: 10px;
+    }
+    .content-apresentacao h3 {
+        font-size: 24px;
+        line-height: 24px;
+        margin-top: 0;
+    }
+    .content-apresentacao li {
+        font-size: 14px;
+    }
+    .content-apresentacao iframe {
+        width: 100%;
+        height: 182px;
+        border: 0;
+    }
+    .apresentacao {
+        position: relative;
+        padding-bottom: 15px;
+        float: left;
+    }
+    /* apresentacao */
+    /* destaque dos cursos */
+    .destaque-cursos {
+        margin-top: 30px;
+        float: left;
+    }
+    .destaque-cursos h4 {
+        margin: 0;
+    }
+    .boxes-cursos-destaque {
+        margin-top: 30px;
+    }
+    .boxes-cursos-destaque h5 {
+        font: 18px/22px proxima_novasemibold;
+        color: #4f5667;
+    }
+    .boxes-cursos-destaque a.border {
+        letter-spacing: 0px;
+    }
+    .boxes-cursos-destaque a.border span.icone {
+        padding: 11px 10px 10px;
+        letter-spacing: 0px;
+    }
+    /* destaque dos curoso */
+    /* blog */
+    .destaque-blog h5 {
+        font: 20px/28px proxima_novasemibold;
+        color: #fff;
+        margin-top: 7px;
+    }
+    .destaque-blog p {
+        line-height: 17px;
+    }
+    .post-destaque-blog {
+        padding-bottom: 47px;
+        position: relative;
+        min-height: 166px !important;
+    }
+    /* blog */
+    /* newsletter */
+    .newsletter {
+        padding-bottom: 15px !important;
+    }
+    .box-btn-news {
+        width: 50% !important;
+        margin: 0 !important;
+    }
+    /* newsletter */
+    /* footer */
+    .footer ol li {
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+    .footer ol li img {
+        margin-right: 15px;
+    }
+    /* footer */
+    .box-acesso-usuario small {
+        font: 20px proxima_nova_rgbold !important;
+        color: #fff;
+    }
+    .form-login .span3 {
+        width: 48%;
+    }
+    .form-login .span2 {
+        float: right;
+    }
+    /*.perfil-professor .descricao-perfil{width:414px;}*/
+    /*.perfil-professor .span3{width:290px;}*/
+    .perfil-professor {
+        max-height: 280px;
+        min-height: 250px;
+    }
+    .filtro-professores form {
+        width: 78%;
+    }
+    .divisao-filtro {
+        width: 83%;
+    }
+    .filtro-professores ul#estilo li {
+        width: 100%;
+        float: left;
+    }
+    /* box slide de aulas */
+    .bx-wrapper {
+        width: 460px;
+    }
+    /* box slide de aulas */
+    /* aulas ao vivo */
+    a.border span.b-icon-black {
+        padding: 8px 10px 7px;
+    }
+    .b-icon-black i {
+        color: #fff;
+        font-style: normal;
+        padding: 0 8px;
+    }
+    /* aulas ao vivo */
+    /* aulas ao vivo view */
+    .aulas-ao-vivo-view .tabs-complemento .conteudo-descricao {
+        width: 66%;
+    }
+    .dados-sobre-aula img {
+        float: left;
+        width: 45px;
+    }
+    .dados-sobre-aula p {
+        float: left;
+        font-size: 16px;
+        color: #444444;
+        margin-left: 10px;
+        width: 62%;
+    }
+    .dados-sobre-aula div.destaque-prof img {
+        background: #ad1d28;
+        border: 3px solid #fff;
+        width: 45px;
+        height: 45px;
+    }
+    /* aulas ao vivo view */
+    /* modulos */
+    .box-btn-busca-avancada .border span.btn {
+        width: auto;
+    }
+    .box-btn-busca-avancada .border span.b-icon {
+        padding: 19px 10px 11px 11px;
+    }
+    .descricao_aula .border span.b-icon {
+        padding: 6px 4px 4px 4px;
+    }
+    .box-grade-curso .span12 .prof-aula {
+        margin-left: 20px !important;
+    }
+    /* modulos */
+    /* pagina de alunos */
+    .aviso-aulas-ao-vivo img {
+        width: 100%;
+        float: left;
+    }
+    .aviso-aulas-ao-vivo .border span.b-icon {
+        padding: 5px 4px 5px 6px !important;
+    }
+    .aviso-aulas-ao-vivo h2 {
+        margin-top: 0;
+    }
+    /* pagina de alunos */
+    /* faq */
+    .pag-faq .lista-segmentos h3 {
+        color: #4f5667;
+        font: 18px proxima_novasemibold;
+        position: relative;
+        left: 50px;
+        float: left;
+        text-indent: 10px;
+        width: 100px;
+    }
+    .pag-faq .lista-segmentos p {
+        color: #4f5667;
+        font-size: 16px;
+        float: left;
+        position: relative;
+        width: 100px;
+    }
+    /* faq */
+    /* busca */
+    .filtro-buscador .campo-busca {
+        margin: 15px 0 33px;
+        width: auto;
+        font-family: proxima_novasemibold_italic !important;
+        background: #f8f8f8 !important;
+        -webkit-box-shadow: inset 0px 0px 2px #000 !important;
+        box-shadow: inset 0px 0px 6px #cecece !important;
+        font: 14px proxima_novasemibold;
+        height: 26px !important;
+        width: 520px;
+        border: 1px solid #cecece !important;
+    }
+    .filtro-buscador .box-select {
+        width: 250px;
+        margin-left: 20px;
+    }
+    .box-select1 {}
+    .grid_filtros .aulas-filtro .img-circle {
+        border: 4px solid #fff;
+        background: #ae212c;
+        height: 46px !important;
+        width: 46px;
+        position: absolute;
+        left: 50%;
+        margin-left: -23px;
+        top: 40px;
+    }
+    /* busca */
+    /* acesso curso */
+    .border span.b-icon-info {
+        padding: 11px 10px 9px !important;
+    }
+    .box-grade-curso .span12 {
+        margin-left: 35px !important;
+    }
+    .box-grade-curso .span12 .span7 {
+        width: 400px;
+    }
+    /* acesso curso */
+    .btn-login .btn-success {
+        padding: 10px 6px 8px !important;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        border: 1px solid #cccccc
+    }
+    .filtro-buscador small {
+        width: 100% !important;
+    }
+    /* planos */
+    .preco_plano {
+        text-align: center;
+        margin: 20px auto 66px;
+        height: 42px;
+    }
+    .preco_plano .span_valor {
+        font-size: 33px;
+        line-height: 24px;
+        letter-spacing: -3px;
+    }
+    .preco_plano .span_cifrao {
+        font-size: 21px;
+        line-height: 36px;
+    }
+    .preco_plano .span_mes {
+        font-size: 18px;
+        line-height: 36px;
+    }
+    .tooltip_planos {
+        width: 190px !important;
+    }
+    .tool_header {
+        padding: 17px 10px;
+    }
+    /* planos */
+    /* perfil */
+    .barra-escolha-plano {
+        padding: 10px 0;
+        margin-top: 15px;
+    }
+    .box-cadastro h3 {
+        color: #fff;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .novo-plano {
+        margin-top: 20px;
+    }
+    /* perfil */
+    .hidden-desktop-title {
+        display: block;
+    }
+    .hidden-tablet-title {
+        display: none;
+    }
+    .hidden-desktop-novidade {
+        display: block;
+    }
+    .hidden-tablet-novidade {
+        display: none;
+    }
+    .hidden-desktop-geral {
+        display: none;
+    }
+    .hidden-tablet-geral {
+        display: none;
+    }
+    .visible-tablet-geral {
+        display: block !important;
+    }
+    .visible-desktop-geral {
+        display: none;
+    }
+    .aviso-aulas-ao-vivo .border span.btn {
+        width: 73%;
+    }
+    /* aula */
+    .container-video {
+        height: 269px;
+    }
+    .container-video iframe {
+        height: 269px;
+        width: 476px;
+    }
+    .aviso-aulas-ao-vivo div.aula img {
+        width: 100%;
+    }
+    .aviso-aulas-ao-vivo div.aula p {
+        width: 100%;
+    }
+    .ul_player {
+        width: 99% !important;
+    }
+    #barra_progresso_li {
+        width: 63% !important;
+        margin-right: 10px;
+    }
+    .conteudo-aula ol {
+        height: 311px;
+        overflow: auto;
+    }
+    .social-player li a {
+        padding: 10px 9px 10px 10px;
+        float: left;
+        color: #BBBBBB;
+        text-decoration: none;
+    }
+    .meus-videos {
+        display: none;
+    }
+    .btn-player-ipad {
+        height: 34px;
+        width: 60%;
+        float: left;
+        position: relative;
+        margin-top: 20px;
+    }
+    .btn-player-ipad a {
+        background: url("../../img/bg_player.jpg") repeat scroll 0 center rgba(0, 0, 0, 0) !important;
+        padding: 6px 8px;
+        color: #BBBBBB;
+        font-size: 13px;
+        text-decoration: none;
+        float: left;
+        margin-right: 6px;
+    }
+    .btn-player-ipad div {
+        float: right;
+    }
+    .btn-player-ipad div span {
+        float: left;
+        margin: 5px 0 0 6px;
+    }
+    .btn-player-ipad div a {
+        margin: 0 0 0 6px;
+    }
+    .visible-desktop-alunos {
+        display: none;
+    }
+    /* professor */
+    .img-destaque iframe {
+        margin-top: 34px;
+        height: 173px;
+    }
+    .pag-alunos .curso-aluno {
+        width: 195px;
+        min-height: 300px;
+    }
+    .visible-tablet-apresentacao {
+        display: block
+    }
+    .visible-desktop-apresentacao {
+        display: none;
+    }
+    .hidden-tablet-tab {
+        display: none;
+    }
+    /* pesquisa */
+    .tabela-pesquisa label {
+        float: left;
+        width: 93%;
+        margin-left: 10px;
+    }
+    /* pesquisa */
+    /* Alunos */
+    .video_introdutorio {
+        margin: 31px 0 0 10px;
+        height: 291px;
+        width: 299px;
+    }
+    .aulas-curso .span12 {
+        margin-left: 35px;
+    }
+    .aulas-curso .span12 .span7 {
+        width: 400px !important;
+    }
+    /* cursos */
+    .descricao-curso-desktop {
+        display: none !important;
+    }
+    .descricao-curso-tablet-vt {
+        display: block !important;
+    }
+    .descricao-curso-tablet-hr {
+        display: none !important;
+    }
+    #UsuarioCupom {
+        width: 80px;
+        float: left;
+        margin-bottom: 2px !important
+    }
+    .pagamento label.checkbox {
+        width: 100%;
+        float: left
+    }
+    /* vendas */
+    .mediabox-vendas .span7 {
+        width: 80%;
+    }
+    .vantagens-cursos .span12 img.borda {
+        top: 204px;
+    }
+    .circulo-vantagem {
+        height: 130px !important;
+        width: 130px !important;
+    }
+    .area-curso-e-login button .btn-success {
+        width: 81%;
+    }
+    .area-curso-e-login strong {
+        font: 25px proxima_novaextrabold;
+        line-height: 32px;
+        color: #4b5568;
+        margin: 0px 0;
+        display: block;
+    }
+    .area-curso-e-login p {
+        margin-top: 10px;
+    }
+    .area-curso-e-login .area-curso strong {
+        margin-top: 10px;
+    }
+    .exibicao-total-curso .descricao-curso {
+        padding: 20px 0 0 20px;
+        float: left;
+        width: 41%;
+    }
+    .exibicao-total-curso .descricao-curso strong {
+        font: 24px proxima_novaextrabold;
+        line-height: 26px;
+    }
+    .area-preco span {
+        font: 24px proxima_novasemibold;
+    }
+    .area-data span {
+        font: 24px proxima_novasemibold;
+    }
+    .exibicao-total-curso .border-success {
+        margin: 20px 0;
+    }
+    .exibicao-ultimo-curso strong {
+        font: 22px/24px proxima_novaextrabold !important;
+    }
+    .area-btn-tab a {
+        font-size: 12px;
+    }
+    .form-msg .border span.btn {
+        width: 210px;
+    }
+    .area-aluno #myTab a {
+        padding: 25px 10px 20px 7px !important;
+    }
+    .tabela-minhas-compras table {
+        font: 12px proxima_nova_rgbold;
+        width: 100%;
+        margin-top: 20px;
+        float: left;
+    }
+    .link-alterar-plano {
+        width: 100%;
+        display: block;
+    }
+    .link-cancelar-assinatura {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
+    .titulo-conteudo-aba {
+        font-size: 25px;
+    }
+    .busca-por-materiais form input {
+        width: 93.5%;
+    }
+    .lista-materiais .box-material div {
+        width: 78px;
+        height: 78px;
+    }
+    .lista-materiais .box-material div i:first-child {
+        font-size: 30px;
+        margin-top: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .btn-navbar {
+        margin-top: 50px !important;
+    }
+    .nav {
+        margin: 45px 0 0 0 !important;
+        float: right !important;
+        text-transform: uppercase;
+    }
+    .navbar a.border {
+        float: right !important;
+        margin-top: 45px;
+    }
+    /*.nav-fixo .menu-opcoes-usuario{margin-top:27px !important;}*/
+    /*.navbar .menu-opcoes-usuario .dropdown-menu{left: -19px;}*/
+    .content-mediabox h3 {
+        font-size: 46px;
+        line-height: 60px;
+    }
+    .content-mediabox strong {
+        font-size: 36px;
+        line-height: 36px;
+        margin-top: 30px;
+    }
+    .content-mediabox p {
+        font: 18px/24px proxima_novasemibold;
+        margin-top: 24px;
+    }
+    .apresentacao .content {
+        padding-left: 40px;
+    }
+    .box-btn-news {
+        width: 380px;
+    }
+    .form-login {
+        width: 700px !important;
+        margin-left: 0;
+    }
+    /* slide de aulas */
+    /*.jcarousel .span3 { position: relative; background: #fff; margin: 0 30px 0 0; padding: 0 0 20px; max-width: 241px; width: 240px; /*width: 212px;*/
+}
+
+*/
+/* slide de aulas */
+
+
+/* aulas ao vivo view */
+
+.dados-sobre-aula div {
+    width: 100%;
+    float: left;
+    margin: 20px 0 10px;
+}
+
+.dados-sobre-aula img {
+    float: left;
+    width: 63px;
+}
+
+.dados-sobre-aula p {
+    float: left;
+    font-size: 16px;
+    color: #444444;
+    margin-left: 10px;
+    width: 70%;
+}
+
+.dados-sobre-aula div.destaque-prof {
+    width: 100%;
+    float: left;
+}
+
+.dados-sobre-aula div.destaque-prof p {
+    color: #ad1d28;
+}
+
+.dados-sobre-aula div.destaque-prof img {
+    background: #ad1d28;
+    border: 3px solid #fff;
+    width: 57px;
+    height: 57px;
+}
+
+
+/* aulas ao vivo view */
+
+
+/* pagina de alunos */
+
+.box-ultima-aula {
+    padding: 10px 10px 5px;
+    background-color: #fff;
+    float: left;
+    margin: 0;
+}
+
+.proximas-aulas {
+    width: 563px
+}
+
+.proximas-aulas .esconder-aula {
+    display: block;
+}
+
+.aviso-aulas-ao-vivo h2 {
+    color: #4f5667;
+    font: 32px proxima_novasemibold;
+    margin: 0;
+}
+
+.aviso-aulas-ao-vivo div p {
+    margin: 2px 0 0 6px;
+    float: left;
+    width: 148px;
+}
+
+
+/* pagina de alunos */
+
+
+/* busca */
+
+.filtro-buscador small {
+    color: #4f5667;
+    font-size: 16px;
+    clear: both;
+    float: left;
+    margin-top: 20px;
+}
+
+.filtro-buscador .campo-busca {
+    margin: 15px 0 33px;
+    width: auto;
+    font-family: proxima_novasemibold_italic !important;
+    background: #f8f8f8 !important;
+    -webkit-box-shadow: inset 0px 0px 2px #000 !important;
+    box-shadow: inset 0px 0px 6px #cecece !important;
+    font: 14px proxima_novasemibold;
+    height: 26px !important;
+    width: 848px;
+    border: 1px solid #cecece !important;
+}
+
+.filtro-buscador .box-select {
+    width: 200px;
+    margin-left: 20px;
+}
+
+.box-select1 {
+    margin-left: 40px !important;
+}
+
+.exibicao-pag div.divisao {
+    float: left;
+    margin-bottom: 0;
+}
+
+.grid_filtros .aulas-filtro .img-circle {
+    border: 4px solid #fff;
+    background: #ae212c;
+    height: 46px !important;
+    width: 46px;
+    position: absolute;
+    left: 50%;
+    margin-left: -23px;
+    top: 35%;
+}
+
+
+/* busca */
+
+
+/* acesso curso */
+
+.box-grade-curso .span12 {
+    width: 93%;
+    margin-left: 62px;
+}
+
+.box-grade-curso .span12 .span7 {
+    width: 660px;
+}
+
+
+/* acesso curso */
+
+
+/* aulas curso pag alunos */
+
+.aulas-curso .span12 {
+    width: 93%;
+    margin-left: 62px;
+}
+
+.aulas-curso .span12 .span7 {
+    width: 660px;
+}
+
+
+/* aulas curso pag alunos */
+
+#barra_progresso_li {
+    width: 60%;
+}
+
+.hidden-desktop-title {
+    display: none;
+}
+
+.visible-tablet-geral {
+    display: none;
+}
+
+.visible-desktop-alunos {
+    display: block;
+}
+
+.visible-tablet-alunos {
+    display: none;
+}
+
+.hidden-desktop-geral {
+    display: none;
+}
+
+.nav-tabs {
+    margin-top: -47px !important
+}
+
+.visible-tablet-apresentacao {
+    display: none
+}
+
+.visible-desktop-apresentacao {
+    display: block;
+}
+
+
+/* cursos */
+
+.descricao-curso-desktop {
+    display: block;
+}
+
+.descricao-curso-tablet-vt {
+    display: none;
+}
+
+.descricao-curso-tablet-hr {
+    display: none;
+}
+
+
+}
+@media (max-width: 767px) {
+    body {
+        padding: 0 !important;
+    }
+    
+    .container {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+    .logo {
+        width: 22% !important;
+    }
+    
+    .navbar .container {
+        margin: 0 !important;
+    }
+    
+    .navbar a.border {
+        margin-top: 30px !important;
+        float: right !important;
+    }
+    
+    .navbar a.border span.btn {
+        font-size: 11px !important;
+        padding: 7px 12px 5px !important;
+    }
+    
+    .btn-navbar {
+        margin: 30px 0 0 10px !important;
+    }
+    
+    .nav-collapse .nav {
+        background-color: #4f5667 !important;
+        margin: 0 !important;
+    }
+    
+    .nav {
+        float: right !important;
+        font-size: 11px !important;
+    }
+    
+    .nav a:hover {
+        background-color: transparent !important;
+    }
+    
+    .navbar .nav-collapse {
+        position: absolute;
+        right: 0px;
+        top: 64px;
+    }
+    /* menu fixo */
+    
+    .btn-navbar-fixo {
+        margin: 5px 0 0 10px !important;
+    }
+    
+    .nav-collapse-fixo {
+        width: 100%;
+        position: absolute;
+        top: 42px;
+        overflow: hidden;
+    }
+    
+    .nav-fixo li {
+        border-left: 0 none;
+        float: left;
+        padding: 10px 14px;
+        width: 100%;
+        border-bottom: 3px solid #eee;
+    }
+    
+    .nav-fixo {
+        margin: 0;
+        list-style: none;
+        padding: 0;
+        float: right;
+        border: 1px solid #eee;
+        width: 60%;
+        background: #fff;
+        height: auto;
+    }
+    /* menu fixo */
+    /* home 
+	.container-home{margin-top: -53px;}
+	/* home */
+    /* mediabox */
+    
+    .carousel-caption {
+        background: none;
+        top: 61px;
+    }
+    /* mediabox */
+    /* apresentacao */
+    
+    .apresentacao {
+        position: relative;
+        padding-bottom: 10px;
+        float: left;
+    }
+    /* apresentacao */
+    /* footer */
+    
+    .box-social-rodape img {
+        margin-right: 10px;
+    }
+    /* footer */
+    
+    .form-login .span3 {
+        width: 100%;
+        float: right;
+    }
+    
+    .form-login input {
+        width: 98%;
+        float: right;
+    }
+    
+    .form-login .span2 {
+        float: right;
+        width: 100px;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        padding: 0 !important;
+    }
+    
+    .logo {
+        width: 30% !important;
+    }
+    
+    .navbar a.border {
+        margin-top: 30px !important;
+        float: right;
+    }
+    
+    .navbar a.border span.btn {
+        font-size: 11px !important;
+        padding: 7px 12px 5px !important;
+    }
+    
+    .navbar .nav-collapse {
+        position: absolute;
+        right: 0px;
+        top: 64px;
+    }
+    
+    .btn-navbar {
+        margin: 30px 0 0 10px !important;
+    }
+    /*	.nav-collapse .nav{background-color: #4f5667 !important; margin:0 !important;}
+	.nav{float:right !important; font-size: 11px !important;}
+	.nav a:hover{background-color: transparent !important;}
+*/
+    /* mediabox */
+    /*.carousel-caption { background: none; top: 80px; }*/
+    
+    .content-mediabox h3 {
+        font-size: 20px;
+        line-height: 35px;
+        width: 70%;
+        margin: 0;
+    }
+    
+    .content-mediabox strong {
+        font-size: 17px;
+        line-height: 23px;
+        margin-top: 6px;
+        width: 53%;
+        display: block;
+    }
+    
+    .content-mediabox p {
+        font: 14px/14px proxima_novasemibold;
+        margin-top: 6px;
+    }
+    
+    .content-mediabox a.border {
+        margin-top: 15px !important;
+    }
+    
+    .content-mediabox a.border span.btn {
+        font-size: 11px !important;
+        padding: 7px 12px 5px !important;
+    }
+    
+    .content-mediabox .nav-collapse {
+        position: absolute;
+        right: 0px;
+        top: 64px;
+    }
+    
+    .content-mediabox .border span.b-icon {
+        padding: 12px 10px 9px;
+    }
+    /* mediabox */
+    /* menu fixo */
+    
+    .btn-navbar-fixo {
+        margin: 5px 0 0 10px !important;
+    }
+    
+    .nav-collapse-fixo {
+        width: 100%;
+        position: absolute;
+        top: 42px;
+        overflow: hidden;
+    }
+    
+    .nav-fixo li {
+        border-left: 0 none;
+        float: left;
+        padding: 10px 14px;
+        width: 100%;
+        border-bottom: 3px solid #eee;
+    }
+    
+    .nav-fixo {
+        margin: 0;
+        list-style: none;
+        padding: 0;
+        float: right;
+        border: 1px solid #eee;
+        width: 60%;
+        background: #fff;
+        height: auto;
+    }
+    /* menu fixo */
+    /* footer */
+    
+    .box-social-rodape img {
+        margin-right: 10px;
+    }
+    /* footer */
+}
+@media (max-width: 979px) and (min-width: 768px) {
+    .span8.navegacao-players,
+    .span8.video {
+        width: 97%;
+    }
+    
+    #barra_progresso_li {
+        width: 83% !important;
+        margin-right: 10px;
+    }
+    
+    .barra_player ul {
+        list-style: none outside none;
+        margin: 0;
+        /* padding: 0 10px 0 0; */
+        position: relative;
+        display: table;
+        width: 100%;
+        background: #000;
+    }
+    
+    .social-player {
+        width: 100%;
+        float: left;
+        background: #000;
+        margin-top: 41px;
+    }
+    
+    .conteudo-aula {
+        position: relative;
+        padding: 30px 0 0;
+        height: auto;
+        width: 97%;
+    }
+}

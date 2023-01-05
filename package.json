@@ -1,0 +1,32 @@
+{
+  "name": "guitarpedia-novo",
+  "version": "1.0.0",
+  "description": "<p align=\"center\"><img src=\"https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg\" width=\"400\"></p>",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "browser-sync-client": "^2.26.14",
+    "browser-sync-ui": "^2.26.14",
+    "chokidar": "^3.5.1",
+    "eazy-logger": "^3.1.0",
+    "gulp": "^4.0.2",
+    "localtunnel": "^2.0.1",
+    "natives": "^1.1.6",
+    "socket.io": "^2.4.1",
+    "videojs-hls-quality-selector": "^1.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/agenciavoxdigital/guitarpedia-novo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/agenciavoxdigital/guitarpedia-novo#readme"
+}

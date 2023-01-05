@@ -1,0 +1,351 @@
+@media (max-width: 414px) { 
+	
+	body{ padding: 0 !important; }
+
+	.mediabox_vendas .slides .descricao{ width: 100%; padding: 0 20px; }
+	.mediabox_vendas .slides .descricao strong{ font-size: 33px; line-height: 33px; }
+	.mediabox_vendas .slides .descricao p{ font-size: 15px; line-height: 19px; }
+
+	.nav_filtro{ height: auto; padding: 0 20px; }
+	.nav_filtro li{ width: 46%; margin-right: 10px !important; }
+
+	.btn_busca_avancada{ float: left; }
+
+	.conteudo-vendas{ padding: 10px 20px; }
+
+	.titulo-box{ float: left; }
+	.titulo-box strong{ font-size: 25px; width: 100%; display: block; }
+
+	.titulo-box .link-todos-cursos{ position: relative; margin: 20px 0; }
+
+	.box-cursos-right{ margin-left: 0; }
+
+	.box-cursos-right .lista-cursos{ margin: 0 0 20px; float: left; width: 46%; }
+	.box-cursos-right .lista-cursos:nth-child(2n+2){ margin-left: 20px; }
+
+	.regular{ width: 105%; float: left; }
+
+	.span12{ width: 100%; float: left; }
+
+	.area-avaliacao{ width: 100%; }
+
+	/* Integra */
+
+	.mediabox-integra .descricao{ width: 100% !important; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+	.mediabox-integra .descricao strong { margin-top: 33px !important; }
+
+	.dados-curso span{ display: block; margin-bottom: 5px; }
+
+	.conteudo-integra{ width: 100%; float: left; padding: 0 20px;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+	.descricao-preco{ padding: 20px; }
+
+	.newsletter-curso{ padding: 30px 20px; margin-left: -20px; }
+
+	.lista-descricao-curso li{ font-size: 14px; }
+
+	.newsletter-curso strong{ font-size: 17px; }
+	.newsletter-curso p{ font: 13px/21px proxima_nova_rgregular; }
+
+	.area-avaliacao { margin-top: 17px; border: 0 none ; padding: 7px 0px; width: 100%; }
+
+	.lista-avaliacoes{ margin-top: 20px; }
+
+	.lista-avaliacoes li i { font-size: 11px }
+
+	.lista-avaliacoes li .progress{ height: 10px; margin: 6px 0 0; }
+
+	.lista-avaliacoes li small{ font-size: 13px; }
+
+	.thumb-usuario-comentarios { width: 80px; overflow: hidden; border-radius: 40px; height: 80px; margin: 0 auto; }
+
+	.comentarios-usuario { text-align: center; }
+
+	.comentarios-usuario strong{ margin-top: 10px; }
+
+	.video-curso, .video-curso iframe{ height: 180px; }
+
+	.nav-preco-curso{ height: 130px; }
+	.nav-preco-curso strong { font-size: 17px; }
+	.nav-preco-curso small{ display: none; }
+
+	.nav-preco-curso .box-left{ width: 100%; }
+	.nav-preco-curso .box-right{ width: 100%; }
+
+	.nav-preco-curso .box-right .combo-preco select { font-size: 13px; }
+	.nav-preco-curso .box-right .btn_comprar{ font-size: 16px; line-height: 16px; }
+
+	/* Footer */
+	.footer { padding: 0 0 20px !important; width: 100% !important; }
+	.footer h6 { margin: 21px 0 0 !important; }
+	.footer ul, .footer ol { margin: 10px 0 0; } 
+
+	.footer .span6, .footer .box-social-rodape{ margin: 0 20px; width: auto;}
+
+	.logo-footer { margin-top: 26px; text-align: center;}
+
+	.footer ol li a { color: #fff; width: 75%; display: block; margin: 0 12px; }
+	.footer ol li img { margin: 0 0 10px; }
+
+	.footer .span4 { float: left; width: 50%; }
+
+	.rodape p { text-align: center; }
+	.social-rodape iframe { margin: 15px auto; display: block; }
+
+	.mediabox_vendas .slides{ background-size: auto 100%; }
+
+	.video-curso .slide-video{ height: 161px; }
+
+	.lista-cursos .preco-curso{ padding: 0 0 10px 10px; }
+	.lista-cursos .dados-curso span:last-child{ margin-left: 0; }
+
+	.lista-curriculos ul li a small{ position: absolute; bottom: 4px; left: 19px; }
+
+	.lista-curriculos ul li{ height: 47px; }
+	.lista-curriculos ul li span{ bottom: 7px; top: inherit; }
+
+	.select2-drop {
+	    width: auto !important;
+	    min-width: 9pc;
+	    border: 0 none !important;
+	}
+
+	.nav_filtro ul li select{ width: 0; }
+
+	.box-carousel .lista-cursos{ height: 350px; }
+	.box-carousel .lista-cursos a{ height: 100%; }
+
+	.lista-cursos .thumb{ height: 210px; }
+
+	.modal.fade.in{ top: 93px; }
+
+	#myModalplayer .modal-body{ height: 200px !important; }
+
+
+	.area-view-mobile {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* optional */
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+  }
+
+  .container .descricao-cursos {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
+
+  .container .sidebar-integra {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+    margin-top: 0px;
+  }
+
+  .box_search{ display:none;}
+  .box_info{ display:none;}
+
+  .descricao-oculta-mobile{display: none}
+
+  .dados-curso{background-color: rgba(0, 0, 0, 0.7); width: 100%; margin-left: -20px; padding-left: 20px; padding-top: 5px;}
+
+  .sidebar-integra .social, .sidebar-integra .social a { color: #000000;}
+
+
+  .mediabox-lp { background-size: auto 100% !important; }
+  .mediabox-lp .container{ padding: 0 20px; }
+  .mediabox-lp p{ width: 100% !important; }
+
+  .btn-green-lp{ width: 80%; }
+
+  .media{ height: auto !important; padding-bottom: 30px; }
+  .media .container{ padding: 0 20px; }
+  
+  .media .span2{ text-align: center !important; }
+  .media .span2:nth-child(1) span{ width: 100%; text-align: center; }
+  .media .span2 img{ width: 50%; }
+ 	
+  .box-lp .container{ padding: 0 20px; }
+  .box-lp .span12{ float: none; }
+  .box-lp iframe{ margin: 20px 0; }
+}	
+
+@media (min-width: 415px) and (max-width: 767px) { 
+
+	body{ padding: 0 !important; }
+
+	.mediabox_vendas .slides .descricao{ width: 100%; padding: 0 20px; }
+	.mediabox_vendas .slides .descricao strong{ font-size: 40px; line-height: 40px; }
+	.mediabox_vendas .slides .descricao p{ font-size: 20px; line-height: 26px; }
+
+	.nav_filtro{ height: auto; padding: 0 20px; }
+	.nav_filtro li{ width: 22%; margin-right: 1% !important; }
+
+	.btn_busca_avancada{ float: left; }
+
+	.conteudo-vendas{ padding: 10px 20px; }
+
+	.titulo-box{ float: left; }
+	.titulo-box strong{ font-size: 27px; width: 100%; display: block; }
+
+	.titulo-box .link-todos-cursos{ position: relative; margin: 20px 0; }
+
+	.box-cursos-right{ margin-left: 0; }
+
+	.box-cursos-right .lista-cursos{ margin: 0 0 20px 20px; float: left; width: 30%; }
+	.box-cursos-right .lista-cursos .thumb{ height: 225px; }
+	.box-cursos-right .lista-cursos:nth-child(3n+1){ margin-left: 0px; }
+
+	.regular{ width: 102%; float: left; }
+
+	.span12{ width: 100%; float: left; }
+
+
+	.footer { padding: 0 0 20px !important; width: 100% !important; }
+	.footer h6 { margin: 21px 0 0 !important; }
+	.footer ul, .footer ol { margin: 10px 0 0; } 
+
+	.footer .span6, .footer .box-social-rodape{ margin: 0 20px; width: auto;}
+
+	.logo-footer { margin-top: 26px; text-align: center;}
+
+	.footer ol li a { color: #fff; width: 75%; display: block; margin: 0 12px; }
+	.footer ol li img { margin: 0 0 10px; }
+
+	.footer .span4 { float: left; width: 50%; }
+
+	.rodape p { text-align: center; }
+	.social-rodape iframe { margin: 15px auto; display: block; }
+
+
+	/* Integra */
+
+	.mediabox-integra .descricao{ width: 100% !important; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+	.mediabox-integra .descricao strong { margin-top: 33px !important; }
+
+	.dados-curso span{ display: block; margin-bottom: 5px; }
+
+	.conteudo-integra{ width: 100%; float: left; padding: 0 20px;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+	.descricao-preco{ padding: 20px; }
+
+	.newsletter-curso{ padding: 30px 20px; margin-left: -20px; }
+
+	.lista-descricao-curso li{ font-size: 14px; }
+
+	.newsletter-curso strong{ font-size: 17px; }
+	.newsletter-curso p{ font: 13px/21px proxima_nova_rgregular; }
+
+	.area-avaliacao { margin-top: 17px; border: 0 none ; padding: 7px 0px; width: 100%; }
+
+	.lista-avaliacoes{ margin-top: 20px; }
+
+	.lista-avaliacoes li i { font-size: 11px }
+
+	.lista-avaliacoes li .progress{ height: 10px; margin: 6px 0 0; }
+
+	.lista-avaliacoes li small{ font-size: 13px; }
+
+	.thumb-usuario-comentarios { width: 80px; overflow: hidden; border-radius: 40px; height: 80px; margin: 0 auto; }
+
+	.comentarios-usuario { text-align: center; }
+
+	.comentarios-usuario strong{ margin-top: 10px; }
+
+	.video-curso, .video-curso iframe{ height: 180px; }
+
+	.nav-preco-curso{ height: 130px; }
+	.nav-preco-curso strong { font-size: 17px; }
+	.nav-preco-curso small{ display: none; }
+
+	.nav-preco-curso .box-left{ width: 100%; }
+	.nav-preco-curso .box-right{ width: 100%; }
+
+	.nav-preco-curso .box-right .combo-preco select { font-size: 13px; }
+	.nav-preco-curso .box-right .btn_comprar{ font-size: 16px; line-height: 16px; }
+
+	.mediabox_vendas .slides{ background-size: auto 100%; }
+	
+	.video-curso .slide-video{ height: 161px; }
+	
+	.select2-drop {
+	    width: auto !important;
+	    min-width: 9pc;
+	    border: 0 none !important;
+	}
+
+	.nav_filtro ul li select{ width: 0; }
+	
+	#myModalplayer .modal-body{ height: 200px !important; }
+
+	.area-view-mobile {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* optional */
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+  }
+
+  .container .descricao-cursos {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
+
+  .container .sidebar-integra {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+    margin-top: 0;
+  }
+
+  .mediabox-lp { background-size: auto 100% !important; }
+  .mediabox-lp .container{ padding: 0 20px; }
+  .mediabox-lp p{ width: 100% !important; }
+
+  .btn-green-lp{ width: 80%; }
+
+  .media{ height: auto !important; padding-bottom: 30px; }
+  .media .container{ padding: 0 20px; }
+  
+  .media .span2{ width: 50%; float: left;}
+  .media .span2{ text-align: center !important; }
+  .media .span2:nth-child(1) span{ text-align: center; }
+  .media .span2 img{ width: 50%; }
+ 	
+  .box-lp .container{ padding: 0 20px; }
+  .box-lp .span12{ float: none; }
+  .box-lp iframe{ margin: 20px 0; }
+
+}

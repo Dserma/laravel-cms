@@ -1,0 +1,246 @@
+ /* Header  */
+.header{ 
+	background: #767676; /* Old browsers */
+	background: -moz-linear-gradient(top,  #767676 0%, #4a4a4a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#767676), color-stop(100%,#4a4a4a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #767676 0%,#4a4a4a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #767676 0%,#4a4a4a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #767676 0%,#4a4a4a 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #767676 0%,#4a4a4a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#767676', endColorstr='#4a4a4a',GradientType=0 ); /* IE6-9 */
+
+	-webkit-box-shadow: 0 4px 16px #6c6c6c;
+	box-shadow: 0 4px 16px #6c6c6c;
+	width: 100%;
+	height: 50px;
+	float: left;
+	font: 16px proxima_nova_rgregular;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.f-nav-header{ position: fixed; z-index: 9999; }
+
+.header a { color: #fff; }
+
+a:hover, button:hover{ text-decoration: none; opacity: 0.8; }
+
+.logo{ 
+	width: 130px; padding: 6px 0; position: absolute; left: 0; top: 0; 
+	background: #6b6b6b; /* Old browsers */
+	background: -moz-linear-gradient(top,  #6b6b6b 0%, #323232 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6b6b6b), color-stop(100%,#323232)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #6b6b6b 0%,#323232 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #6b6b6b 0%,#323232 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #6b6b6b 0%,#323232 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #6b6b6b 0%,#323232 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b6b6b', endColorstr='#323232',GradientType=0 ); /* IE6-9 */
+	margin: 0;
+	float: none;
+}
+
+.logo img{ width: 70%; margin: 0 auto; display: block; }
+
+.box_menu{ float: right; }
+.box_menu{ padding: 0; list-style: none; }
+.box_menu li{ float: left; font: 16px proxima_novasemibold; text-transform: uppercase; margin: 15px 14px 0; }
+.box_menu li a{ color: #fff; }
+
+.box_info{ float: right; margin: 15px 10px 0; }
+.box_search{ float: right; margin: 15px 10px 0; }
+.box_menu_usuario{ float: right; margin: 15px 10px 0; position: relative; }
+
+.box_menu_usuario ol{ position: absolute; z-index: 9999; background-color: #fff; width: 174px; right: 0; top: 35px; display: none;
+    -webkit-box-shadow: inset 1px 0 0 rgba(255,255,255,.125), inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+    -moz-box-shadow: inset 1px 0 0 rgba(255,255,255,.125), inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+    box-shadow: inset 1px 0 0 rgba(255,255,255,.125), inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05); }
+
+.box_menu_usuario ol li { padding: 4px 10px !important; font-size: 14px; list-style: none; font-family: proxima_nova_rgregular; } 
+.box_menu_usuario ol li a { padding: 0; display: inline; clear: none; color: #333; width: 95%; }
+
+.box_menu_usuario ol:after { content: ""; width: 12px; line-height: 40px; height: 12px; background: #fff; position: absolute; top: -6px; right: 2px; color: #FFF; text-align: center; -ms-transform: rotate(44deg); -webkit-transform: rotate(44deg); transform: rotate(44deg); z-index: 2; }
+
+.link-login{ float: left; }
+
+.btn_cadastro{ 
+   	background: rgba(153,204,0,1);
+    background: -moz-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(153,204,0,1)), color-stop(100%, rgba(123,164,0,1)));
+    background: -webkit-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+    background: -o-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+    background: -ms-linear-gradient(top, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(153,204,0,1) 0%, rgba(123,164,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cc00', endColorstr='#7ba400', GradientType=0 );
+    text-align: center;
+    font-size: 15px !important;
+    padding: 7px 13px 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0 none;
+    height: 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 0 #5d7d1e;
+    float: left;
+    line-height: 22px; 
+    margin-top: -8px;
+    margin-left: 20px;
+}
+
+/* Header*/
+
+/* Pagina Area do aluno */
+.margin-top-header{ margin-top: 50px !important; border: 0 none; }
+
+	/* Modal Avaliação */
+		.avaliacao-aprovado{ border: 5px solid #81ae9a; }
+		.avaliacao-reprovado{ border: 5px solid #eb5744; }
+
+		#modal-avaliacao { position: absolute; width: 80%; left: 30%; top:5%; border-radius: 20px; background: transparent; }
+		#modal-avaliacao .close { background: transparent !important; border: 0 none !important; right: -31px; top: -5px; font-size: 23px; }
+
+		#modal-avaliacao .conteudo-modal{ border-radius: 20px; background: url(../../img/site2017/bg-modal-avaliacao.jpg) no-repeat center 23px #fff; width: 100%; background-size: 95%;}
+		#modal-avaliacao .conteudo-modal-resultado{ border-radius: 20px; background: url(../../img/site2017/bg-modal-avaliacao.jpg) no-repeat center 23px #fff; width: 100%; background-size: 95%;}
+
+		#modal-avaliacao h3 { font-size: 39px; color: #545454; margin-top: 35px; }
+		#modal-avaliacao h4 { font: normal 14px proxima_nova_rgregular; color: #545454; margin-top: 10px; text-align: center; }
+
+		#modal-avaliacao .modal-header{ border: 0 none; }
+
+		#modal-avaliacao .modal-header-avaiacao{ border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; width: 100%; padding: 10px 0; }
+		
+		#modal-avaliacao .modal-header-avaiacao td{ color: #cecece; font-size: 14px; padding: 10px 0; }
+		#modal-avaliacao .modal-header-avaiacao td span{ text-decoration: underline; }
+		
+		#modal-avaliacao .modal-header-avaiacao td a.item{ float: none; width: 21px; height: 21px; background: url(../../img/site2017/icones.png) no-repeat; display: inline-block; margin: 0px 0px -7px; background-size: 88px; }
+		
+		#modal-avaliacao .modal-header-avaiacao td a.item-times { background-position: -33px 0; }
+		#modal-avaliacao .modal-header-avaiacao td a.item-circle { background-position: -67px 0; }
+		
+		#modal-avaliacao .modal-body { max-height: inherit !important; overflow-y: inherit; }
+		#modal-avaliacao .modal-footer hr{ border-bottom: 1px solid #ccc; }
+		#modal-avaliacao .modal-footer { border-radius: 20px; }
+
+		#modal-avaliacao .box-pergunta {  }
+		#modal-avaliacao .box-pergunta small{ font-size: 40px; color: #545454; text-align: center; margin-top: 50px; display: block; width: 100%; }
+		#modal-avaliacao .box-pergunta p{ font-size: 14px; color: #545454; margin-top: 20px; display: block; width: 100%; }
+		#modal-avaliacao .box-pergunta ol{ list-style: none; margin: 20px 0 0; }
+		#modal-avaliacao .box-pergunta ol li{ color: #a5a5a5; margin-bottom: 10px; }
+		#modal-avaliacao .box-pergunta ol li input{ margin-top: 0; }
+
+		#modal-avaliacao .modal-footer{ border: 0 none; background: #fff; text-align: center; padding: 30px 15px; }
+		#modal-avaliacao .modal-footer button, #modal-avaliacao .modal-footer a{ float: none; display: inline-block; padding: 12px; width: 150px; color: #fff; font-size: 15px; font-weight: 600; border-radius: 8px; box-shadow: 0px 5px 0 #4b7f00; }
+
+		#modal-avaliacao .box-review-respostas ol{ margin: 20px 0 0 15px; }
+		#modal-avaliacao .box-review-respostas ol li{ color: #a5a5a5; margin-bottom: 10px; position: relative; padding-left: 12px; }
+		#modal-avaliacao .box-review-respostas ol li input{ margin-top: 0; }
+		
+		#modal-avaliacao .box-review-respostas ol li.resposta-correta span{ color: #74cbb5; padding-left: 26px; position: relative; }
+		#modal-avaliacao .box-review-respostas ol li.resposta-correta span:before { content: ''; width: 20px; height: 20px; background: url(../../img/site2017/icones.png) no-repeat; background-size: 88px;  position: absolute; left: 0; }
+		
+		#modal-avaliacao .box-review-respostas ol li.resposta-errada span{ color: #cd5847; padding-left: 26px; position: relative;}
+		#modal-avaliacao .box-review-respostas ol li.resposta-errada span a{ color: #cd5847; float: none; text-decoration: underline; }
+		#modal-avaliacao .box-review-respostas ol li.resposta-errada span:before { content: ''; width: 20px; height: 20px; background: url(../../img/site2017/icones.png) no-repeat -33px 0; background-size: 88px; position: absolute; left: 0; }
+
+		.subtitulo-avaliacao{ color: #a5a5a5 !important; text-transform: capitalize; }
+		.subtitulo-avaliacao span{ text-decoration: underline; }
+
+		#modal-avaliacao .modal-footer a.pull-left{ float: left !important; }
+		#modal-avaliacao .modal-footer a.pull-right{ float: right !important; }
+
+		#modal-avaliacao .box-review-respostas ol li .tooltip-respostas{ position: absolute; width: 216px; left: -251px; top: -30px; z-index: 99; display: none; padding-right: 25px; }
+		#modal-avaliacao .box-review-respostas ol li .tooltip-respostas:after { width: 20px; height: 20px; background: #fff; content: ''; display: block; position: absolute; right: 15px; top: 27px; transform: rotate(46deg); }
+		#modal-avaliacao .box-review-respostas ol li .tooltip-respostas div { background: #fff;  padding: 20px; -webkit-box-sizing: border-box; box-shadow: 0 0px 5px #ccc; border-radius: 5px; -moz-box-sizing: border-box; box-sizing: border-box; position: relative; border-radius: 5px; }
+		#modal-avaliacao .box-review-respostas ol li .tooltip-respostas small { font-size: 30px; color: #545454; }
+		#modal-avaliacao .box-review-respostas ol li .tooltip-respostas p { font-size: 14px; color: #545454; margin-top: 10px; }
+		#modal-avaliacao .box-review-respostas ol li .tooltip-respostas span { color: #a5a5a5; display: block; }
+
+		#modal-avaliacao .box-review-respostas ol li.resposta-errada .tooltip-respostas span { color: #ffffff; }
+
+		#modal-avaliacao .box-review-respostas ol li.resposta-correta .tooltip-respostas div, #modal-avaliacao .box-review-respostas ol li.resposta-correta .tooltip-respostas:after{ background: #fbfff2; }
+		#modal-avaliacao .box-review-respostas ol li.resposta-errada .tooltip-respostas div, #modal-avaliacao .box-review-respostas ol li.resposta-errada .tooltip-respostas:after{ background: #eaa9a8; }
+
+		#modal-avaliacao .box-review-respostas ol li:hover .tooltip-respostas{ display: block; }
+
+
+@media (max-width: 414px) { 
+	.header{ padding: 0; }
+	.box_search{ display:none; }
+	.box_info{ display:none; }
+	.logo { width: 130px !important; }
+
+	/* Pagina alunos */
+	.conteudo-aba-avaliacao{ width: 100%; padding: 20px; }
+
+	.titulo-conteudo-aba{ text-align: center; margin: 10px 0; }
+
+	.box-grupo-avaliacoes{ padding: 0; border: 0 none; margin-top: 15px; }
+
+	.tabs-vertical-avaliacoes ul{ margin-bottom: 20px; width: 100%; float: left !important; }
+	.tabs-vertical-avaliacoes li{ float: left; margin-right: 10px; }
+
+	.azulejo-avaliacao{ width: 47% !important; float: left !important; margin: 0 6% 20px 0; }
+	.azulejo-avaliacao:nth-last-child(odd){ margin-right: 0; }
+
+	#modal-avaliacao { width: 90%; left: 5%; }
+	#modal-avaliacao .close{ color: #000; right: 21px !important; top: 6px !important; }
+	
+	#modal-avaliacao h3 { font-size: 30px; color: #545454; margin-top: 4px; }
+	#modal-avaliacao h4 { font-size: 11px; margin: 3px 0 0; }
+	
+	#modal-avaliacao .modal-header-avaiacao td{ width: 100%; float: left; text-align: center; padding: 5px 0; }
+
+	#modal-avaliacao .box-pergunta p{ text-align: center; }
+
+	#modal-avaliacao .box-pergunta{ padding-top: 10px; }
+	#modal-avaliacao .box-pergunta small { margin-top: 7px; font-size: 29px; float: left; width: 10%; }
+	#modal-avaliacao .box-pergunta p{ text-align: left; margin-top: 10px; float: right; width: 89%; margin: 0; }
+	#modal-avaliacao .box-pergunta ol { margin-top: 10px; width: 100%; float: left; }
+	#modal-avaliacao .box-pergunta ol li{ margin-bottom: 0; }
+
+	#modal-avaliacao .box-review-respostas ol li .tooltip-respostas{ left: 0; top: 38px; }
+	#modal-avaliacao .box-review-respostas ol li .tooltip-respostas:after{ left: 29px; top: -9px; }
+
+	#modal-avaliacao .modal-footer a.pull-left{ width: 92%; margin-bottom: 20px; }
+	#modal-avaliacao .modal-footer a.pull-right{ width: 92%; margin-bottom: 20px; }
+}	
+
+@media (min-width: 415px) and (max-width: 767px) { 
+	.header{ padding: 0; }
+	.box_search{ display:none; }
+	.box_info{ display:none; }
+	.logo { width: 130px !important; }
+
+	/* Pagina alunos */
+	.conteudo-aba-avaliacao{ width: 100%; padding: 20px; }
+
+	.titulo-conteudo-aba{ text-align: center; margin: 10px 0; }
+
+	.box-grupo-avaliacoes{ padding: 0; border: 0 none; margin-top: 15px; }
+
+	.tabs-vertical-avaliacoes ul{ margin-bottom: 20px; width: 100%; float: left !important; }
+	.tabs-vertical-avaliacoes li{ float: left; margin-right: 10px; }
+
+	.azulejo-avaliacao{ width: 47% !important; float: left !important; margin: 0 6% 20px 0; }
+	.azulejo-avaliacao:nth-last-child(odd){ margin-right: 0; }
+
+	#modal-avaliacao { width: 90%; left: 5%; background-position: center 8px;  }
+	#modal-avaliacao .close{ color: #000; right: 21px !important; top: 6px !important; }
+	
+	#modal-avaliacao h3 { font-size: 30px; color: #545454; margin-top: 4px; }
+	#modal-avaliacao h4 { font-size: 11px; margin: 3px 0 0; }
+
+	#modal-avaliacao .modal-body{ padding: 0 15px; height: 191px; }
+	
+	#modal-avaliacao .modal-header-avaiacao td{ width: 100%; float: left; text-align: center; padding: 5px 0; }
+
+	#modal-avaliacao .box-pergunta{ padding-top: 10px; }
+	#modal-avaliacao .box-pergunta small { margin-top: 7px; font-size: 29px; float: left; width: 10%; }
+	#modal-avaliacao .box-pergunta p{ text-align: left; margin-top: 10px; float: right; width: 89%; margin: 0; }
+	#modal-avaliacao .box-pergunta ol { margin-top: 10px; width: 100%; float: left; }
+	#modal-avaliacao .box-pergunta ol li{ margin-bottom: 0; }
+
+	#modal-avaliacao .box-review-respostas ol li .tooltip-respostas{ left: 0; top: 38px; }
+	#modal-avaliacao .box-review-respostas ol li .tooltip-respostas:after{ left: 29px; top: -9px; }
+}

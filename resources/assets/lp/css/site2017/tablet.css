@@ -1,0 +1,75 @@
+@media (min-width: 980px) and (max-width: 1024px) {
+
+	.mediabox_vendas .dados-curso span:last-child{ display: block; margin-top: 6px; }
+
+	.dados-avaliacao span{ font-size: 68px; line-height: 68px; }
+
+	.lista-avaliacoes{ width: 317px; margin-left: 20px; }
+
+	.lista-avaliacoes li .icones-avaliacao i{ font-size: 12px; }
+	.area-avaliacao{ width: 494px;  }
+
+	.lista-avaliacoes li .progress{ height: 11px; margin: 5px 0 0; }
+
+	.ultimos-comentarios{ width: 424px; }
+
+	/*.ultimos-comentarios{ width: 248px; text-align: center; }*/
+
+	.ultimos-comentarios .comentarios-usuario{ width: 74%; }
+
+	/*.thumb-usuario-comentarios{ margin: 14px auto; float: none; }*/
+
+	.nav-preco-curso strong{ font-size: 16px; }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+	.mediabox_vendas .slides .descricao strong{ font-size: 44px; margin-top: 92px !important; }
+
+	.mediabox_vendas .dados-curso span:last-child{ display: block; margin-top: 6px; }
+
+	.aprender-no-curso ul li{ font-size: 14px; }
+
+	.video-curso, .video-curso iframe{ height: 250px; }
+
+	.descricao-preco{ padding: 20px; }
+
+	.lista-descricao-curso li{ font-size: 15px; }
+
+	.newsletter-curso{ padding: 20px; margin-left: -20px; }
+	.newsletter-curso p{ font: 14px/21px proxima_nova_rgregular; }
+
+	.thumb-professor{ width: 104px; height: 104px; }
+
+	.dados-avaliacao span{ font-size: 68px; line-height: 68px; }
+
+	.lista-avaliacoes{ width: 317px; margin-left: 20px; }
+
+	.lista-avaliacoes li .icones-avaliacao i{ font-size: 12px; }
+	.area-avaliacao{ width: 451px;  }
+
+	.lista-avaliacoes li .progress{ height: 11px; margin: 5px 0 0; }
+
+	.ultimos-comentarios{ width: 248px; text-align: center; }
+
+	.ultimos-comentarios .comentarios-usuario{ width: 92%; }
+
+	.thumb-usuario-comentarios{ margin: 14px auto; float: none; }
+
+	.nav-preco-curso strong{ font-size: 16px; }
+
+	.nav-preco-curso .box-left{ padding: 0; }
+
+	.nav-preco-curso .box-right .btn_comprar{ font-size: 17px; line-height: 16px; }
+
+	.descricao-oculta-tablet-desktop{ display: none !important; }
+
+	.mediabox-lp .conteudo-mediabox p{ width: 60%; }
+	.btn-green-lp{ width: 50%; margin-bottom: 30px; }
+
+	.media { height: 70px; }
+	.media span{ font-size: 14px; margin-top: 20px; }
+
+}

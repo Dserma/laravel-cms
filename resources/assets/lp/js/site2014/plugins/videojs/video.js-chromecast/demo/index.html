@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html data-cast-api-enabled="true">
+  <head>
+    <title>Demo - VideoJS Chromecast Plugin</title>
+
+    <link href="//vjs.zencdn.net/5.19/video-js.min.css" rel="stylesheet">
+    
+    <script src="http://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+    <script src="/js/site2014/plugins/videojs/video/src/js/video.min.js"></script>
+    <script src="/js/site2014/plugins/videojs/videojs-contrib-hls/src/videojs-contrib-hls.min.js"></script>
+    <script src="/js/site2014/plugins/videojs/videojs-abloop/dist/videojs-abloop.min.js"></script>
+    <script src="/js/site2014/plugins/videojs/video.js-chromecast/dist/videojs-chromecast.js"></script>
+
+  
+    </head>
+  <body>
+   
+    <video id="my-player" class="video-js" controls preload="auto" poster="//vjs.zencdn.net/v/oceans.png" data-setup='{}'>
+    <source src="//nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8" type="application/x-mpegURL"></source>
+    </video>
+
+    <script>
+// var options = {
+//   chromecast:{
+//      appId:'CC1AD845',
+//      metadata:{
+//        title:'Title display on tech wrapper',
+//        subtitle:'Synopsis display on tech wrapper',
+//      }
+//   }};
+
+    var options = {
+      hls: {
+        withCredentials: false
+      }
+    };
+    
+    var op = {
+      chromecast: {
+        appId: 'CC1AD845',
+        metadata: {
+          title: "Title display on tech wrapper",
+          subtitle: "Synopsis display on tech wrapper"
+        }
+      }
+    };
+
+    var player = videojs('my-player', {flash: options, html5: options, plugins: op });
+
+    console.log( player );
+// var player = videojs('my-player', options, function onPlayerReady() {
+//   videojs.log('Your player is ready!');
+
+//   // In this context, `this` is the player that was created by Video.js.
+//   this.play();
+
+//   // How about an event listener?
+//   this.on('ended', function() {
+//     videojs.log('Awww...over so soon?!');
+//   });
+// });
+    </script>
+  </body>
+</html>

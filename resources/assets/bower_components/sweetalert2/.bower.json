@@ -1,0 +1,15 @@
+{
+  "name": "sweetalert2",
+  "homepage": "https://github.com/sweetalert2/sweetalert2",
+  "version": "9.17.1",
+  "_release": "9.17.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v9.17.1",
+    "commit": "af00192de4a92f8873c84ba6ee9e6cf5fb1e12c5"
+  },
+  "_source": "https://github.com/sweetalert2/sweetalert2.git",
+  "_target": "^9.17.1",
+  "_originalSource": "sweetalert2",
+  "_direct": true
+}
