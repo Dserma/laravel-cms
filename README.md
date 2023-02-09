@@ -143,6 +143,7 @@ Rode suas migrations, e teremos nossa estrutura pronta para iniciarmos.
 Uma vez que o banco de dados está ok, precisamos configurar nossas models, para que trabalhem com o LaravelCMS.
 
 Isso é feito através de algumas variáveis `públicas`, na própria model. São elas:
+- $type(`string`) => Pode ser `model` ou `page`. O default é `model`
 - $hasOrder(`bool`) => Indica se a listagem de itens desta model terá ordenação por Drag`n Drop
 - $hasForm(`bool`) => Indica se a model terá formulários de Visualização/Edição
 - $update(`bool`) => Habilita/Desabilita o botão de `Salvar`, no formulário de edição
@@ -252,3 +253,82 @@ public $formulario = [
     ],
 ];
 ```    
+Podemos adicionar quantos campos forem necessários para o nosso formulário, e ir encaixando eles da melhor maneira, com o parâmetro `width` de cada um.
+
+Aqui a lista de todos os campos existentes hoje:
+
+- [belongs](#belongs);
+- [checkbox](#checkbox);
+- [color](#color);
+- [date](#date);
+- [dateTime](#dateTime);
+- [editorMin](#editorMin);
+- [email](#email);
+- [fieldset](#fieldset);
+- [file](#file);
+- hidden;
+- icon;
+- image;
+- manyTo;
+- number;
+- password;
+- radio;
+- readonly;
+- repeater;
+- select-await;
+- select-multi;
+- select;
+- text;
+- textarea;
+- time;
+- url;
+- video;
+
+### belongs
+Usado para as relações do tipo `BelongsTo` da model em questão. Em nosso exemplo de posts, na model `Post` deverá existir um campo desse tipo, para selecionarmos a categoria do post a ser inserido/editado.
+
+```php
+'categoria_id' => [ // Atributo na tabela
+    'title' => 'Categoria do Post*', // Título exibido ao usuário
+    'type' => 'belongs', // Tipo do campo
+    'model' => 'Categoria', // Model a ser carregada e populada no select
+    'show' => 'nome', // Atributo da model Parent a ser exibido como text das options
+    'width' => 6, // Tamanho, em colunas, deste campo
+    'validators' => 'required|int|exists:categorias,id', // Validações do campo.
+],
+```
+Resultado:
+
+![belongs](http://refreshweb.com.br/images/belongs.png)
+### checkbox
+Usado para criar opções de múltiplas seleções ao usuário.
+
+```php
+'checkbox' => [ // Atributo na tabela
+    'title' => 'Categorias:', // Título exibido ao usuário
+    'type' => 'checkbox', // Tipo do campo
+    'src' => 'model', // Pode ser do tipo model, que lê os items de uma tabela, ou do tipo array, onde as opções são manuais
+    'data' => 'Categoria', // Origem dos dados. Nome da model ou array com opções
+    'show' => 'nome', // Atributo da model carregada que será exibido ao usuário
+    'width' => 12, // Tamanho, em colunas, deste campo
+    'validators' => 'required', // Validações do campo.
+]
+```
+Resultado:
+
+![checkbox](http://refreshweb.com.br/images/checkbox.png)
+
+```php
+'checkbox' => [ // Atributo na tabela
+    'title' => 'Categorias:', // Título exibido ao usuário
+    'type' => 'checkbox', // Tipo do campo
+    'src' => 'array', // Pode ser do tipo model, que lê os items de uma tabela, ou do tipo array, onde as opções são manuais
+    'data' => [1 => 'Item 1', 2 => 'Item 2', 3 => 'Item 3'], // Origem dos dados. Nome da model ou array com opções
+    'width' => 12, // Tamanho, em colunas, deste campo
+    'validators' => 'required', // Validações do campo.
+]
+```
+
+Resultado:
+
+![checkboxarray](http://refreshweb.com.br/images/checkboxarray.png)
