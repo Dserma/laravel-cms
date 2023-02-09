@@ -1,78 +1,216 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# LaravelCMS
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+LaravelCMS é um conjunto de ferramentas, dentro do Framework, que ajuda o desenvolvedor a criar um CMS ( painel administrativo ) de forma simples e muito rápida, gerando todo o HTML do crud, de cada model, automaticamente, através de alguns parâmetros escritos na própria model.
+Abaixo, algumas vantagens:
 
-## About Laravel
+- CRUDs simples, e até mesmo complexos, em questão de minutos;
+- Possui o [AdminLTE2](https://adminlte.io/themes/AdminLTE/index2.html) como layout;
+- Utiliza [DataTables](https://datatables.net/) na listagem dos registros;
+- Os editores de conteúdos e upload de imagens únicas são com o [Froala Editor 2](https://froala.com/wysiwyg-editor/);
+- Uploads de múltiplos arquivos feito com o [Krajee File Input](https://plugins.krajee.com/file-input);
+- Alertas com o [SweetAlert2](https://sweetalert2.github.io/);
+- Dispensa a criação de várias rotas para cada Model;
+- Completamente customizável, por ser Open Source.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+LaravelCMS foi criado para ajudar a comunidade a criar painéis administrativos com aparência profissional, de forma rápida e fácil, e pode ser customizado para se adaptar a qualquer situação.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+# Índice
+ - [Começando](#começando)
+ - [Criando Menus](#criando-menus)
+ - [Preparando Nossa Estrutura](#preparando-nossa-estrutura)
 
-## Learning Laravel
+# Começando
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Para iniciar um projeto com o LaravelCMS, basta clonar o repositório do mesmo, instalar as dependências do composer, e configurar o seu ambiente.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Uma vez que o ambiente esteja ok, edite o arquivo "database/seeds/UsersTableSeeder.php", alterando as credenciais do admin, e execute o comando `php artisan migrate --seed`, criando assim a tabela de usuários, e registrando o usuário admin master.
 
-## Laravel Sponsors
+Após isso, basta acessar http://localhost/backend, com as credenciais adicionadas no seed, e pronto, já terá acesso ao seu primeiro painel administrativo LaravelCMS.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+# Criando Menus
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+Como o LaravelCMS é feito para atender a uma grande gama de projetos, nós podemos customizar os menus laterais, que nossos usuários terão acesso. Podemos customizar:
+- Criar múltiplas seções de menu, nomeando cada uma delas;
+- Nomes dos menus;
+- A ordenação deles;
+- O ícone de cada item do menu;
+- Se ele será do tipo **único** ou **árvore**;
+- Seus subitens, caso seja do tipo **árvore**, também customizando cada aspecto dos subitens.
 
-## Contributing
+Para que isso seja possível, um arquivo chamado `config/cms.php`, que contém um `array` com todas as opções do nosso menu.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Veja o exemplo abaixo:
 
-## Code of Conduct
+```php
+return [
+  'menu' => [
+    'header1' => [ // Seção de menu, com o nome HOME
+      'title' => 'HOME',
+      'type' => 'header',
+    ],
+    'banner' => [ // Menu de ação simples, levando o usuário diretamente ao módulo Banners
+      'title' => 'Banners',
+      'type' => 'model',
+      'icon' => 'fa-picture-o', // Ícone do menu, em fontawesome 4
+    ],
+    'eventos' => [
+      'type' => 'group', // Indicação de um menu em árvore, que conterá subitens
+      'top' => true,
+      'title' => 'Eventos',
+      'icon' => 'fa-calendar',
+      'subs' => [ // Indicação dos subitens
+        'categoriaevento' => [
+          'title' => 'Categorias de Eventos',
+          'icon' => 'fa-list-ul',
+        ],
+        'evento' => [
+          'title' => 'Eventos',
+          'type' => 'model',
+          'icon' => 'fa-calendar',
+        ],
+      ],
+    ],
+  ],
+];
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Isso resultará neste menu:
 
-## Security Vulnerabilities
+![menu](http://refreshweb.com.br/images/menu.png)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Explicando cada item do array de menus:
 
-## License
+```php
+    'banner' => [ // Nome exato da Model em questão
+      'title' => 'Banners', // Título que aparecerá para o usuário
+      'type' => 'model', // Pode ser do tipo 'model', 'group' ou 'header'
+      'icon' => 'fa-picture-o', // Ícone do menu, em fontawesome 4
+    ],
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Preparando nossa estrutura
+
+Uma vez que nosso menu foi configurado, podemos começar a criar nossos CRUDs.
+Para isso, devemos criar nossas models e migrations, ou podemos aproveitar as já criadas também.
+
+Para esta documentação, vamos criar nossas models do zero.
+
+Vamos criar um CRUD de um blog, com categorias, posts e galeria de imagem dos posts.
+
+Iniciamos com a criação das models e suas respectivas migrations:
+
+```
+php artisan make:model Models/Categoria -m
+php artisan make:model Models/Post -m
+php artisan make:model Models/Tag -m
+php artisan make:model Models/Galeria -m
+```
+
+Isso irá nos gerar as models `Categoria`, `Post`, `Tag` e `Galeria` dentro da pasta `app/Models`, junto com suas migrations.
+
+Crie os campos que desejar em cada migration. 
+
+Neste exemplo, nosso post pertencerá a apenas uma `Categoria`, mas poderá ter mais de uma `Tag`, então a migration do `Post` deverá referenciar o id da categoria, tendo a seguinte entrada: 
+
+`$table->foreignId('categoria_id')->constrained();`.
+
+Isso irá criar a Foreign Key da categoria em nossa tabela de posts.
+
+Precisaremos também de uma migration a parte, para o relacionamento do tipo `ManyToMany`, entre os posts e as tags, uma vez que o post pode ter várias tags, e uma tag pode pertencer a vários posts.
+
+```
+php artisan make:migration create_post_tag_table --create=post_tag
+```
+
+Essa migration terá apenas as referências das duas tabelas em questão:
+
+```php
+$table->foreignId('post_id')->constrained()->onDelete('cascade');
+$table->foreignId('tag_id')->constrained()->onDelete('cascade');
+```
+A migration da `Galeria` deve referenciar o id da model que será pai dela, neste caso, a `Post`.  Além disso, deverá conter o campo `arquivo`, que armazenará o caminho da nossa imagem:
+
+`$table->foreignId('post_id')->constrained()->onDelete('cascade');`
+
+`$table->string('arquivo');`
+
+Rode suas migrations, e teremos nossa estrutura pronta para iniciarmos.
+
+
+# Configurando as Models
+
+Uma vez que o banco de dados está ok, precisamos configurar nossas models, para que trabalhem com o LaravelCMS.
+
+Isso é feito através de algumas variáveis `públicas`, na própria model. São elas:
+- $hasOrder(`bool`) => Indica se a listagem de itens desta model terá ordenação por Drag`n Drop
+- $hasForm(`bool`) => Indica se a model terá formulários de Visualização/Edição
+- $update(`bool`) => Habilita/Desabilita o botão de `Salvar`, no formulário de edição
+- $serverSide(`bool`) => Define se os registros serão paginados pelo servidor, ou pelo front
+- $searchAdmin(`array`) => Array com os atributos que serão buscados no banco, caso `$serverSide` esteja habilitado
+- $withAdmin(`array`) => Array com as relações que serão carregadas junto com a model, apenas no painel administrativo
+- $title(`string`) => Título do módulo, para o usuário
+- $newButton(`String`) => Texto do botão de adição de um novo registro
+- $listagem(`array`) => Atributos que serão mostrados na listagem dos registros do módulo,
+- $formulario(`array`) => Todos os atributos que existirão nos formulários de Inclusão e Edição
+
+
+Além destes supra citados, que são exclusivos do LaravelCMS, devemos ter os que são do próprio Laravel. Os que iremos utilizar são:
+
+- $guarded(`array`) => Indica quais atributos não serão utilizados no mass storage
+- $appends(`array`) => Define os 'novos' atributos que usaremos nas listagens, como uma data formatada, por exemplo
+
+E claro, precisaremos criar os relacionamentos, caso existam.
+
+Vamos agora configurar a model `Categoria`, a primeira e mais fácil.
+
+```php
+class Categoria extends Model
+{
+    protected $guarded = [];
+    public $hasOrder = true;
+    public $hasForm = true;
+    public $update = true;
+    public $serverSide = false;
+    public $withAdmin = [];
+    public $title = 'Categorias de Posts';
+    public $newButton = 'Nova Categoria';
+
+    public $listagem = [
+        'nome',
+    ];
+
+    public $formulario = [
+        'nome' => [
+            'title' => 'Nome da Categoria:*',
+            'type' => 'text',
+            'width' => 12,
+            'validators' => 'required|string|min:2|unique:categorias,nome,$this->id',
+        ],
+    ];
+
+    public function posts()
+    {
+        return $this->hasMany(Post::class);
+    }
+}
+```
+Essa configuração resultará nesta tela:
+
+![modulo de categorias](http://refreshweb.com.br/images/firstmodule.png)
+
+Essa tela, como os botões padrões de `Ver/Editar` e `Excluir`, bem como os botões de exportação da listagem, acima da mesma, são gerados **automaticamente** pelo LaravelCMS, apenas com estas linhas da model de `Categoria`.
+
+E o formulário de inclusão/edição, ficará assim:
+
+![formulario](http://refreshweb.com.br/images/formmodulo.png)
+
+Após a inclusão/edição de algum registro, uma notificação do tipo `toaster` é exibida no canto superior direito, indicando o sucesso da ação, e a tabela de listagem é atualizada automaticamente, via ajax.
+
+Na inclusão, o formulário é zerado e a modal continua aberta, para a inclusão contínua. Na edição, a modal é fechada após a gravação dos dados.
+
+Quando o botão de `exclusão` é acionado, uma confirmação de ação é exibida ao usuário:
+
+![confirmação](http://refreshweb.com.br/images/exclusao.png)
+
+Caso o usuário clique no botão `Sim`, então o registro será apagado e a tabela atualizada via ajax.
