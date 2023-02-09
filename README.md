@@ -82,11 +82,11 @@ Isso resultará neste menu:
 Explicando cada item do array de menus:
 
 ```php
-    'banner' => [ // Nome exato da Model em questão
-      'title' => 'Banners', // Título que aparecerá para o usuário
-      'type' => 'model', // Pode ser do tipo 'model', 'group' ou 'header'
-      'icon' => 'fa-picture-o', // Ícone do menu, em fontawesome 4
-    ],
+'banner' => [ // Nome exato da Model em questão
+    'title' => 'Banners', // Título que aparecerá para o usuário
+    'type' => 'model', // Pode ser do tipo 'model', 'group' ou 'header'
+    'icon' => 'fa-picture-o', // Ícone do menu, em fontawesome 4
+],
 ```
 
 # Preparando nossa estrutura
@@ -214,3 +214,41 @@ Quando o botão de `exclusão` é acionado, uma confirmação de ação é exibi
 ![confirmação](http://refreshweb.com.br/images/exclusao.png)
 
 Caso o usuário clique no botão `Sim`, então o registro será apagado e a tabela atualizada via ajax.
+
+# Entendendo Nossa Tela
+Agora, vamos entender o que fizemos com os parâmetros `listagem` e `formulário`, quem compõem nossa tela.
+
+## Listagem
+
+No parâmetro `listagem`, podemos adicionar todos os atributos que desejarmos serem listados para o usuário.
+
+Os campos `id` e `ações` são padrões do LaravelCMS, e sempre são exibidos.
+
+O campo `#` apenas é exibido quando o parâmetro `hasOrder` for `true`, pois ele é o gatilho da ordenação Drag'n Drop.
+
+Em cada item do `listagem` podemos passar apenas o nome do atributo, exatamente como está na tabela, e o LaravelCMS já exibe este mesmo nome no cabeçalho, capitalizado, ou podemos passar o texto que queremos no cabeçalho da tabela, e então o atributo que vamos exibir. Por exemplo:
+
+ ```php
+ public $listagem = [
+    'Data' => 'dataFormatada', // Atributo criado via appends
+    'Categoria' => 'categoria.nome' // Atributo nome da relação categoria
+    'Nome do Post' => 'nome' // Atributo nome, porém com um título diferente na exibição
+ ]
+```
+
+## Formulário
+
+O parâmetro `formulario` diz ao LaravelCMS como ele deve montar cada campo do formulário de inclusão/edição.
+
+Vamos analisar este exemplo:
+
+```php
+public $formulario = [
+    'nome' => [ // Atributo da tabela. Será o name do input
+        'title' => 'Nome da Categoria:*', // Título exibido ao usuário
+        'type' => 'text', // Tipo do campo. Vamos ver todos mais abaixo.
+        'width' => 12, // Tamanho do campo, em largura de colunas. 1 - 12
+        'validators' => 'required|string|min:2|unique:categorias,nome,$this->id', // As validações que este campo terá
+    ],
+];
+```    
