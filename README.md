@@ -298,7 +298,7 @@ Usado para as relações do tipo `BelongsTo` da model em questão. Em nosso exem
     'show' => 'nome', // Atributo da model Parent a ser exibido como text das options
     'width' => 6, // Tamanho, em colunas, deste campo
     'validators' => 'required|int|exists:categorias,id', // Validações do campo.
-],
+]
 ```
 Resultado:
 
@@ -339,3 +339,113 @@ Com o source `array`:
 Resultado:
 
 ![checkboxarray](http://refreshweb.com.br/images/checkboxarray.png)
+
+### color
+Gera um `color picker` para o usuário, em HTML5
+
+```php
+'color' => [ // Atributo na tabela
+    'title' => 'Cor de fundo', // Título exibido ao usuário
+    'type' => 'color', // Tipo do campo
+    'width' => 6, // Tamanho, em colunas, deste campo
+    'validators' => 'required', // Validações do campo.
+]
+```
+Resultado:
+
+![color](http://refreshweb.com.br/images/color.png)
+
+### date
+Gera um `date picker` para o usuário, em HTML5
+
+```php
+'date' => [ // Atributo na tabela
+    'title' => 'Data de Publicação', // Título exibido ao usuário
+    'type' => 'date', // Tipo do campo
+    'width' => 2, // Tamanho, em colunas, deste campo
+    'validators' => 'required', // Validações do campo.
+]
+```
+Resultado:
+
+![date](http://refreshweb.com.br/images/date.png)
+
+### dateTime
+Gera um `dateTIme picker` para o usuário, em HTML5
+
+```php
+'datetime' => [ // Atributo na tabela
+    'title' => 'Data de Publicação', // Título exibido ao usuário
+    'type' => 'dateTime', // Tipo do campo
+    'width' => 2, // Tamanho, em colunas, deste campo
+    'validators' => 'required', // Validações do campo.
+]
+```
+Resultado:
+
+![dateTime](http://refreshweb.com.br/images/dateTime.png)
+
+### editorMin
+Gera um `editor wysiwyg` para o usuário, com poucos recursos de formatação
+
+```php
+'editorMin' => [ // Atributo na tabela
+    'title' => 'Resumo do Post', // Título exibido ao usuário
+    'type' => 'editorMin', // Tipo do campo
+    'width' => 12, // Tamanho, em colunas, deste campo
+    'validators' => 'required', // Validações do campo.
+]
+```
+Resultado:
+
+![editorMin](http://refreshweb.com.br/images/editorMin.png)
+
+### email
+Gera um input do tipo `email`, com a respectiva validação nativa
+
+```php
+'email' => [ // Atributo na tabela
+    'title' => 'E-mail do autor', // Título exibido ao usuário
+    'type' => 'email', // Tipo do campo
+    'width' => 6, // Tamanho, em colunas, deste campo
+    'validators' => 'required|email', // Validações do campo.
+]
+```
+Resultado:
+
+![email](http://refreshweb.com.br/images/email.png)
+
+### fieldset
+Gera um `fieldset` html, que pode ser usado para agrupar outros campos
+
+```php
+'separador-sobre' => [ // Índice do array de campos. Não pode ser duplicado
+    'title' => 'Configurações do Primeiro Bloco', // Título exibido ao usuário
+    'type' => 'fieldset', // Tipo do campo
+    'comment' => 'Configure aqui o primeiro bloco da página', // Opcional, aparece abaixo do título
+],
+'sobre_titulo' => [
+    'title' => 'Título do bloco',
+    'type' => 'text',
+    'width' => 12,
+    'validators' => 'required|string|min:2',
+]
+```
+Resultado:
+
+![fieldset](http://refreshweb.com.br/images/fieldset.png)
+
+### file
+Gera um input para um `arquivo único`, utilizando o `krajee file input`
+
+```php
+'file' => [ // Atributo na tabela
+    'title' => 'Arquivo anexo', // Título exibido ao usuário
+    'type' => 'file', // Tipo do campo
+    'width' => 12, // Tamanho, em colunas, deste campo
+    'validators' => 'required', // Validações do campo.
+]
+```
+Resultado:
+
+![file](http://refreshweb.com.br/images/file.png)
