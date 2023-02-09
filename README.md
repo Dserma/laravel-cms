@@ -16,10 +16,13 @@ LaravelCMS foi criado para ajudar a comunidade a criar painéis administrativos 
 
 
 # Índice
- - [Começando](#começando)
- - [Criando Menus](#criando-menus)
- - [Preparando Nossa Estrutura](#preparando-nossa-estrutura)
-
+- [Começando](#começando)
+- [Criando Menus](#criando-menus)
+- [Preparando Nossa Estrutura](#preparando-nossa-estrutura)
+- [Configurando as Models](#configurando-as-models)
+- [Entendendo Nossa Tela](#entendendo-nossa-tela)
+    - [Listagem](#listagem)
+    - [Formulário](#formulário)
 # Começando
 
 Para iniciar um projeto com o LaravelCMS, basta clonar o repositório do mesmo, instalar as dependências do composer, e configurar o seu ambiente.
