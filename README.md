@@ -303,6 +303,8 @@ Resultado:
 ### checkbox
 Usado para criar opções de múltiplas seleções ao usuário.
 
+Com o source `model`:
+
 ```php
 'checkbox' => [ // Atributo na tabela
     'title' => 'Categorias:', // Título exibido ao usuário
@@ -317,6 +319,8 @@ Usado para criar opções de múltiplas seleções ao usuário.
 Resultado:
 
 ![checkbox](http://refreshweb.com.br/images/checkbox.png)
+
+Com o source `array`:
 
 ```php
 'checkbox' => [ // Atributo na tabela
