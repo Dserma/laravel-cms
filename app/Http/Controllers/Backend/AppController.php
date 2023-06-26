@@ -60,7 +60,7 @@ class AppController extends BackController
         ]);
     }
 
-    public function get(Model $model, String $action = null, Request $request)
+    public function get(Model $model, Request $request,  String $action = null)
     {
         if (!isset($model->serverSide) || $model->serverSide == true) {
             return BaseRepository::get($model, $action, $request);

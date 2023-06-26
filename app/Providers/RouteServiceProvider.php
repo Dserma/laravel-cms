@@ -69,168 +69,8 @@ class RouteServiceProvider extends ServiceProvider
               return new $model();
           }
         );
-
-        Route::bind(
-            'aluno',
-            function ($handle) {
-                return Aluno::find($handle);
-            }
-        );
-
-        Route::bind(
-            'aulavod',
-            function ($handle) {
-                return Aulavod::find($handle);
-            }
-        );
-
-        Route::bind(
-            'modulovod',
-            function ($handle) {
-                return Modulovod::find($handle);
-            }
-        );
-
-        Route::bind(
-            'cursovod',
-            function ($handle) {
-                return Cursovod::find($handle);
-            }
-        );
-
-        Route::bind(
-            'categoriaVodSlug',
-            function ($handle) {
-                return Categoriavod::where('slug', $handle)->first();
-            }
-        );
-
-        Route::bind(
-            'professorVodSlug',
-            function ($handle) {
-                return Professorvod::where('slug', $handle)->first();
-            }
-        );
-
-        Route::bind(
-            'cursoSlug',
-            function ($handle) {
-                return Cursovod::where('slug', $handle)->firstOrFail() ;
-            }
-        );
-
-        Route::bind(
-            'moduloSlug',
-            function ($handle) {
-                return Modulovod::where('slug', $handle)->firstOrFail() ;
-            }
-        );
-
-        Route::bind(
-            'aulaSlug',
-            function ($handle) {
-                return Aulavod::where('slug', $handle)->firstOrFail() ;
-            }
-        );
-
-        Route::bind(
-            'noticiaSlug',
-            function ($handle) {
-                return Noticia::where('slug', $handle)->firstOrFail() ;
-            }
-        );
-
-        Route::bind(
-            'planoSlug',
-            function ($handle) {
-                return Plano::where('slug', $handle)->first();
-            }
-        );
-
-        Route::bind(
-            'certificadovod',
-            function ($handle) {
-                return Certificadovod::find($handle);
-            }
-        );
-
-        Route::bind(
-            'perguntacertificado',
-            function ($handle) {
-                return Perguntacertificadovod::find($handle);
-            }
-        );
-
-        Route::bind(
-            'professoraovivo',
-            function ($handle) {
-                return Professoraovivo::find($handle);
-            }
-        );
-
-        Route::bind(
-            'professoraovivoSlug',
-            function ($handle) {
-                return Professoraovivo::where('slug', $handle)->first();
-            }
-        );
-
-        Route::bind(
-            'categoriaaovivoSlug',
-            function ($handle) {
-                return Categoriaaovivo::where('slug', $handle)->first();
-            }
-        );
-
-        Route::bind(
-            'categoriaaovivo',
-            function ($handle) {
-                return Categoriaaovivo::find($handle);
-            }
-        );
-
-        Route::bind(
-            'aulaaovivo',
-            function ($handle) {
-                return Aulaaovivo::find($handle);
-            }
-        );
-
-        Route::bind(
-            'agendamentoaluno',
-            function ($handle) {
-                return Agendamentoaovivo::find($handle);
-            }
-        );
-
-        Route::bind(
-            'partitura',
-            function ($handle) {
-                return Partituravod::find($handle);
-            }
-        );
-
-        Route::bind(
-            'backtrack',
-            function ($handle) {
-                return Backingtrakvod::find($handle);
-            }
-        );
-
-        Route::bind(
-            'avaliacao',
-            function ($handle) {
-                return Avaliacaoaovivo::find($handle);
-            }
-        );
-
-        Route::bind(
-            'pedidoaovivo',
-            function ($handle) {
-                return Pedidoaovivo::find($handle);
-            }
-        );
     }
+
 
     /**
      * Define the routes for the application.
@@ -264,18 +104,18 @@ class RouteServiceProvider extends ServiceProvider
               require $file;
           }
           $files = glob(base_path('routes/sistema/*'));
-          foreach ($files as $file) {
-              if (is_file($file)) {
-                  require $file;
-              } else {
-                  $folder = glob($file . '/*');
-                  foreach ($folder as $f) {
-                      if (is_file($f)) {
-                          require $f;
-                      }
-                  }
-              }
-          }
+            foreach ($files as $file) {
+                if (is_file($file)) {
+                    require $file;
+                } else {
+                    $folder = glob($file . '/*');
+                    foreach ($folder as $f) {
+                        if (is_file($f)) {
+                            require $f;
+                        }
+                    }
+                }
+            }
       });
     }
 

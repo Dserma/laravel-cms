@@ -2,71 +2,58 @@
 
 namespace App\Models;
 
-use Cviebrock\EloquentSluggable\Sluggable;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
-class Post extends BaseModel
+class Post extends Model
 {
-    use Sluggable;
+    use HasFactory;
 
-    public function sluggable()
-    {
-        return [
-        'slug' => [
-          'source' => 'titulo',
-        ],
-      ];
-    }
-
-    protected $guarded = [
+    protected $guarded = [];
+    protected $hidden = [];
+    public $listagem = [
+        'categoria' => 'categoria.nome',
+        'titulo'
     ];
-    protected $appends = [
-        'imagemTag',
+    public $withAdmin = [
+        'categoria'
     ];
-    protected $with = ['categoria'];
-    public $hasOrder = false;
+    public $newButton = 'Novo Post';
+    public $title = 'Posts';
     public $hasForm = true;
     public $update = true;
-    public $title = 'Posts';
-    public $newButton = 'Novo Post';
-
-    public $listagem = [
-      'Imagem' => 'imagemTag',
-      'Categoria' => 'categoria.nome',
-      'titulo',
-    ];
-
     public $formulario = [
-      'categoriapost_id' => [
-        'title' => 'Categoria do post',
-        'type' => 'belongs',
-        'model' => 'Categoriapost',
-        'show' => 'nome',
-        'width' => 4,
-        'validators' => 'required|int|exists:categoriaposts,id',
-      ],
-      'titulo' => [
-        'title' => 'Título do Post',
-        'type' => 'text',
-        'width' => 12,
-        'validators' => 'required|string|min:5',
-      ],
-      'imagem' => [
-        'title' => 'Imagem do Post',
-        'type' => 'image',
-        'width' => 12,
-        'validators' => 'required|string|min:10',
-      ],
-      'conteudo' => [
-        'title' => 'Conteúdo do Post',
-        'type' => 'textarea',
-        'width' => 12,
-        'editor' => true,
-        'validators' => 'required',
-      ],
+        'categoria_id' => [
+            'title' => 'Categoria',
+            'type' => 'belongs',
+            'model' => 'Categoria',
+            'show' => 'nome',
+            'width' => 4,
+            'validators' => 'required|int|exists:categorias,id',
+        ],
+        'titulo' => [
+            'title' => 'Título',
+            'type' => 'text',
+            'width' => 12,
+            'validators' => 'required|string|min:2|unique:posts,titulo,$this->id',
+        ],
+        'imagem' => [
+            'title' => 'Imagem do Post:*',
+            'type' => 'image',
+            'width' => 12,
+            'validators' => 'required|string|min:3',
+        ],
+        'conteudo' => [
+            'title' => 'Conteúdo do Post',
+            'type' => 'textarea',
+            'editor' => true,
+            'width' => 12,
+        ],
     ];
 
     public function categoria()
     {
-        return $this->belongsTo(Categoriapost::class, 'categoriapost_id');
+        return $this->belongsTo(Categoria::class);
     }
+
 }

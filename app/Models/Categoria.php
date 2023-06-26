@@ -2,28 +2,28 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Categoria extends Model
 {
-    protected $guarded = [];
+    use HasFactory;
 
-    public $hasOrder = true;
+    protected $guarded = [];
+    protected $hidden = [];
+    public $listagem = [
+        'nome',
+    ];
+    public $newButton = 'Nova Categoria';
+    public $title = 'Categorias';
     public $hasForm = true;
     public $update = true;
-    public $title = 'Categorias de Posts';
-    public $newButton = 'Nova Categoria de Post';
-
-    public $listagem = [
-      'Categoria de Post' => 'nome',
-    ];
-
     public $formulario = [
-      'nome' => [
-        'title' => 'Nome da Categoria de Post',
-        'type' => 'text',
-        'width' => 12,
-        'validators' => 'required|string|min:3|unique:categorias,nome,$this->id',
-      ],
+        'nome' => [
+            'title' => 'Nome da Categoria',
+            'type' => 'text',
+            'width' => 12,
+            'validators' => 'required|string|min:2|unique:categorias,nome,$this->id',
+        ],
     ];
 }

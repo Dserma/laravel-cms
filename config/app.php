@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -13,60 +12,7 @@ return [
     |
     */
 
-    'moip' => [
-        'dev' => [
-            'key' => '',
-            'secret' => '',
-            'url' => 'https://sandbox.moip.com.br/assinaturas/v1/',
-            'id' => 'APP-',
-            'website' => 'http://voxdigital.sytes.net/guitarpedia-novo/',
-            'accessToken' => '',
-            'description' => 'App de desenvolvimento Guitarpedia',
-            'name' => 'Guitarpedia DEV',
-            // 'secret' => '36b9b713af73410e80d5635f0f21b901',
-            'redirectUri' => 'http://voxdigital.sytes.net/guitarpedia-novo/getToken',
-            'createdAt' => '2020-11-10T15:12:33.136Z',
-            'updatedAt' => '2020-11-10T15:12:33.136Z',
-        ],
-        'prod' => [
-            'key' => '',
-            'secret' => '',
-            'url' => 'https://api.moip.com.br/assinaturas/v1/',
-            'id' => '',
-            'website' => 'https://guitarpedia.com.br/',
-            'accessToken' => '',
-            'description' => 'App de PROD Guitarpedia',
-            'name' => 'Guitarpedia PROD',
-            // 'secret' => '36b9b713af73410e80d5635f0f21b901',
-            'redirectUri' => 'http://guitarpedia.com.br/getToken',
-            'createdAt' => '2020-11-10T15:12:33.136Z',
-            'updatedAt' => '2020-11-10T15:12:33.136Z',
-        ],
-    ],
-
-    'paypal' => [
-        'dev' => [
-            'key' => '-',
-            'secret' => '-',
-        ],
-        'prod' => [
-            'key' => '-',
-            'secret' => '',
-        ],
-    ],
-
-    'name' => env('APP_NAME', 'Guitarpedia'),
-    'email' => 'contato@guitarpedia.com.br',
-    'zoom' => [
-        'cliente_id' => '',
-        'cliente_secret' => '',
-        'token' => '',
-    ],
-    'mailchimp' => [
-        'key' => '-us7',
-        'server' => 'us7',
-        'listId' => '',
-    ],
+    'name' => env('APP_NAME', 'Laravel CMS'),
 
     /*
     |--------------------------------------------------------------------------
@@ -188,7 +134,6 @@ return [
     */
 
     'providers' => [
-
         /*
          * Laravel Framework Service Providers...
          */
@@ -227,7 +172,6 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
     ],
 
     /*
@@ -242,7 +186,6 @@ return [
     */
 
     'aliases' => [
-
         'App' => Illuminate\Support\Facades\App::class,
         'Arr' => Illuminate\Support\Arr::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
@@ -279,7 +222,5 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
     ],
-
 ];
