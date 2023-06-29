@@ -1,4 +1,5 @@
 <?php
+
 Route::group([
   'prefix' => '/backend',
 ], function () {
@@ -22,40 +23,6 @@ Route::group([
   'middleware' => 'auth:backend',
   'prefix' => '/backend',
 ], function () {
-    Route::get('/aulavod/{aulavod}/partituras', [
-      'as' => 'backend.aulavod.partituras',
-      'uses' => 'Backend\Aulasvod\AulavodController@partituras',
-    ]);
-    Route::get('/modulo/historico/{aluno}/{model}', [
-      'as' => 'backend.aluno.historico',
-      'uses' => 'Backend\AppController@subModulo',
-    ]);
-
-    Route::post('/aulavod/{aulavod}/partituras/upload', [
-      'as' => 'backend.aulasvod.aulavod.partitura',
-      'uses' => 'Backend\Aulasvod\AulavodController@upload',
-    ]);
-
-    Route::post('/aulavod/{aulavod}/partituras/apagar', [
-      'as' => 'backend.aulasvod.aulavod.partitura.apagar',
-      'uses' => 'Backend\Aulasvod\AulavodController@apagar',
-    ]);
-
-    Route::get('/aulavod/{aulavod}/backingtracks', [
-      'as' => 'backend.aulavod.backingtracks',
-      'uses' => 'Backend\Aulasvod\AulavodController@backingtracks',
-    ]);
-
-    Route::post('/aulavod/{aulavod}/backingtracks/upload', [
-      'as' => 'backend.aulasvod.aulavod.backingtrack',
-      'uses' => 'Backend\Aulasvod\AulavodController@uploadBackingtrack',
-    ]);
-
-    Route::post('/aulavod/{aulavod}/backingtracks/apagar', [
-      'as' => 'backend.aulasvod.aulavod.backingtrack.apagar',
-      'uses' => 'Backend\Aulasvod\AulavodController@apagarBackingtrack',
-    ]);
-
     Route::get('/modulo/cursovod/{cursovod}/{model}', [
       'as' => 'backend.cursosvod.modulos',
       'uses' => 'Backend\AppController@subModulo',
